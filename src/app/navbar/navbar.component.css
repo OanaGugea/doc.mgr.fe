@@ -1,0 +1,47 @@
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+  .example-full-width {
+    width: 8%;
+    font-size: 15px;
+    
+  }
+  .mat-tab-group {
+    margin-bottom: 48px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 600px;
+    height: 380px;
+    border: 3px solid  #eff0ede1;
+}
+
+.example-button-row .mat-button-base {
+  
+  margin: 160px 5px 5px 0;
+  position: relative;
+  right: -320px;
+  width: 150px;
+ }
+
+ .lista{
+  font-size: 12px;
+  font-style: normal;
+  margin-left: 10px;
+  padding:8px;
+ }
+
+ .alerta{
+  font-size: 16px;
+  padding:10px;
+ }
+ .observatie{
+  font-size: 16px;
+  padding:8px;
+ }
+ .sarcina{
+  font-size: 16px;
+  padding:8px;
+ }

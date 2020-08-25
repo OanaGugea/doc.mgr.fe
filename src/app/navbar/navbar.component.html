@@ -1,0 +1,58 @@
+  <mat-toolbar color="primary" >
+    <div class="spacer"></div>
+    <a mat-button>
+    <mat-icon aria-hidden="false" aria-label="Example home icon" >home</mat-icon></a>
+  <div class="spacer"></div>
+  <mat-icon>search</mat-icon>
+  <mat-form-field class="example-full-width">
+    <mat-label>Caută client</mat-label>
+    <input matInput placeholder="" value="">
+  </mat-form-field>
+      <div class="spacer"></div>
+      <a mat-button >Vanzari </a>
+      <div class="spacer"></div>
+      <a mat-button>Colectari</a>
+      <div class="spacer"></div>
+      <a mat-button>Observatii</a>
+      <div class="spacer"></div>
+      <a mat-button>Adauga companie</a>
+      <div class="spacer"></div>
+      <a mat-button>Activitate</a>
+      <div class="spacer"></div>
+      <a mat-button>Resurse</a>
+      <div class="spacer"></div>
+      <a mat-button href="http://portal.just.ro/SitePages/acasa.aspx"target="_blank">Portal Judecatorie</a>
+      <div class="spacer"></div>
+    </mat-toolbar>
+  
+    <div class="lista" *ngFor="let client of clienti">
+      {{client}}
+    </div>
+
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="ALERTE">
+        <div class="alerta" *ngFor="let alerte of alerta ">
+        {{alerte}}
+       
+        </div>
+      </mat-tab>
+      <mat-tab label="OBSERVATII">
+        <div class="observatie" *ngFor="let observatii of observatie ">
+          {{observatii}}
+        </div>
+      </mat-tab>
+      <mat-tab label="SARCINI">
+        <div class="sarcina" *ngFor="let sarcini of sarcina ">
+          {{sarcini}}
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+
+
+  <div class="example-button-row">
+    <button mat-raised-button color="primary">MODELE ACTE 1</button>
+    <button mat-raised-button color="primary">MODELE ACTE 2</button>
+    <button mat-raised-button color="primary">MODELE ACTE 3</button>
+    <button mat-raised-button color="primary">MODELE ACTE 4</button>
+   
+  </div>
