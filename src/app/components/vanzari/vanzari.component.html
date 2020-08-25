@@ -1,0 +1,32 @@
+<div class="list-container">
+  <mat-list role="lista">
+    <mat-list-item role="listitem" *ngFor="let client of clienti">
+      {{ client }}
+    </mat-list-item>
+  </mat-list>
+
+  <mat-tab-group animationDuration="0ms">
+    <mat-tab label="ALERTE">
+      <div class="alerta" *ngFor="let alerte of alerta">
+        {{ alerte }}
+      </div>
+    </mat-tab>
+    <mat-tab label="OBSERVATII">
+      <div class="observatie" *ngFor="let observatii of observatie">
+        {{ observatii }}
+      </div>
+    </mat-tab>
+    <mat-tab label="SARCINI">
+      <div class="sarcina" *ngFor="let sarcini of sarcina">
+        {{ sarcini }}
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+<div class="example-button-row">
+  <button mat-raised-button color="primary">MODELE ACTE 1</button>
+  <button mat-raised-button color="primary">MODELE ACTE 2</button>
+  <button mat-raised-button color="primary">MODELE ACTE 3</button>
+  <button mat-raised-button color="primary">MODELE ACTE 4</button>
+</div>
