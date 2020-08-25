@@ -24,10 +24,12 @@
       <a mat-button href="http://portal.just.ro/SitePages/acasa.aspx"target="_blank">Portal Judecatorie</a>
       <div class="spacer"></div>
     </mat-toolbar>
-  
-    <div class="lista" *ngFor="let client of clienti">
-      {{client}}
-    </div>
+
+    <mat-list role="lista">
+      <mat-list-item role="listitem" *ngFor="let client of clienti">
+        {{client}}
+      </mat-list-item>
+    </mat-list>
 
     <mat-tab-group animationDuration="0ms">
       <mat-tab label="ALERTE">
