@@ -13,9 +13,11 @@ import { MatListModule } from "@angular/material/list";
 import { VanzariComponent } from "./components/vanzari/vanzari.component";
 import { HomeComponent } from './components/home/home.component';
 import { ColectariComponent } from './components/colectari/colectari.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ClientDialogComponent } from './components/client-dialog/client-dialog.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, VanzariComponent, HomeComponent, ColectariComponent],
+  declarations: [AppComponent, NavbarComponent, VanzariComponent, HomeComponent, ColectariComponent, ClientDialogComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -26,6 +28,7 @@ import { ColectariComponent } from './components/colectari/colectari.component';
     MatInputModule,
     MatTabsModule,
     MatListModule,
+    MatDialogModule,
     RouterModule.forRoot([
       {path: 'vanzari', component: VanzariComponent},
       {path: 'colectari', component: ColectariComponent},

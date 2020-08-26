@@ -1,10 +1,13 @@
 import { Component, OnInit } from "@angular/core";
+import {MatDialog} from '@angular/material/dialog';
+import {ClientDialogComponent } from '../client-dialog/client-dialog.component';
 
 @Component({
   selector: "vanzari",
   templateUrl: "./vanzari.component.html",
   styleUrls: ["./vanzari.component.css"],
 })
+
 export class VanzariComponent implements OnInit {
   public clienti = [
     "Client 1",
@@ -42,8 +45,17 @@ export class VanzariComponent implements OnInit {
     "Sarcina 6",
     "Sarcina 7",
   ];
+  
 
-  constructor() {}
-
+  constructor(public dialog: MatDialog){}
+  
   ngOnInit(): void {}
+
+  openDialog(aa:any) 
+  {
+    console.log(aa);
+    this.dialog.open(ClientDialogComponent);
+
+  }
+  
 }
