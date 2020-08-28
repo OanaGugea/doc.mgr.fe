@@ -1,12 +1,30 @@
-.colourtoolbar{
-background:#11cdef;
-color:white;
-z-index: 2;
-   position: fixed;
-   top: 0px;
-   width: 100%;
-
+.navbar-content {
+  background: #11cdef;
+  color: white;
+  z-index: 2;
+  position: sticky;
+  top: 0px;
+  width: 100%;
 }
+
+.left-menu-items {
+  justify-content: left;
+}
+
+.center-menu-items {
+  margin: auto;
+}
+
+.right-menu-items {
+  justify-content: right;
+  display: contents;
+}
+
+.home-icon {
+  color: white;
+  vertical-align: middle;
+}
+
 .form-control {
   display: block;
   margin-left: 2%;
@@ -21,9 +39,10 @@ z-index: 2;
   background-clip: padding-box;
   border: 1px solid white;
   border-radius: 1rem;
-  box-shadow:none;
+  box-shadow: none;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 .form-control:focus {
   color: #8898aa;
   background-color: #fff;
@@ -31,6 +50,7 @@ z-index: 2;
   outline: 0;
   box-shadow: none, none;
 }
+
 .form-control::placeholder {
   color: white;
   opacity: 1;
@@ -38,7 +58,6 @@ z-index: 2;
 
 .spacer {
   flex: 1 1 auto;
- 
 }
 
 .example-full-width {

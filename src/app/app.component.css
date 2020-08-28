@@ -1,5 +1,4 @@
 .page-container{
     background: #F0F8FF;
-    height: calc(100vh - 0px);
-    margin-top:64px;
+    height: 100%;
 }

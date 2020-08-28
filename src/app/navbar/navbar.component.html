@@ -1,34 +1,23 @@
-<mat-toolbar class="colourtoolbar">
-  <div class="spacer"></div>
-  <a mat-button routerLink="/">
-    <mat-icon aria-hidden="false" aria-label="Example home icon"
-      >home</mat-icon
-    ></a
-  >
-  <div class="spacer"></div>
-  <a mat-button routerLink="/vanzari">Vanzari </a>
-  <div class="spacer"></div>
-  <a mat-button routerLink="/colectari">Colectari</a>
-  <div class="spacer"></div>
-  <a mat-button routerLink="/">Observatii</a>
-  <div class="spacer"></div>
-  <a mat-button routerLink="/">Adauga companie</a>
-  <div class="spacer"></div>
-  <a mat-button routerLink="/">Activitate</a>
-  <div class="spacer"></div>
-  <a mat-button routerLink="/">Resurse</a>
-  <div class="spacer"></div>
-  <a
-    mat-button
-    href="http://portal.just.ro/SitePages/acasa.aspx"
-    target="_blank"
-    >Portal Judecatorie</a
-  >
+<mat-toolbar class="navbar-content">
+  <div class="left-menu-items">
+    <a routerLink="/">
+      <mat-icon class="home-icon" aria-hidden="false">home</mat-icon></a
+    >
+  </div>
 
+  <div class="center-menu-items">
+    <a mat-button routerLink="/vanzari">Vanzari </a>
+    <a mat-button routerLink="/colectari">Colectari</a>
+    <a mat-button routerLink="/">Observatii</a>
+    <a mat-button routerLink="/">Adauga companie</a>
+    <a mat-button routerLink="/">Activitate</a>
+    <a mat-button routerLink="/">Resurse</a>
+    <a mat-button href="http://portal.just.ro/SitePages/acasa.aspx"
+      >Portal Judecatorie</a
+    >
+  </div>
 
-  
-      <input class="form-control" placeholder="Cauta..." type="text">
-    
-
-  <div class="spacer"></div>
+  <div class="right-menu-items">
+    <input class="form-control" placeholder="Cauta..." type="text" />
+  </div>
 </mat-toolbar>
