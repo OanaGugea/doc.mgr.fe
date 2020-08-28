@@ -1,16 +1,10 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="colourtoolbar">
   <div class="spacer"></div>
   <a mat-button routerLink="/">
     <mat-icon aria-hidden="false" aria-label="Example home icon"
       >home</mat-icon
     ></a
   >
-  <div class="spacer"></div>
-  <mat-icon>search</mat-icon>
-  <mat-form-field class="example-full-width">
-    <mat-label>Caută client</mat-label>
-    <input matInput placeholder="" value="" />
-  </mat-form-field>
   <div class="spacer"></div>
   <a mat-button routerLink="/vanzari">Vanzari </a>
   <div class="spacer"></div>
@@ -30,5 +24,7 @@
     target="_blank"
     >Portal Judecatorie</a
   >
+
+  <input class="form-control" placeholder="Search" type="text">
   <div class="spacer"></div>
 </mat-toolbar>
