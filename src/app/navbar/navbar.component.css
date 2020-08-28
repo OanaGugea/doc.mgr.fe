@@ -44,8 +44,6 @@
 }
 
 .form-control:focus {
-  color: #8898aa;
-  background-color: #fff;
   border-color: rgba(50, 151, 211, 0.25);
   outline: 0;
   box-shadow: none, none;
@@ -54,15 +52,6 @@
 .form-control::placeholder {
   color: white;
   opacity: 1;
-}
-
-.spacer {
-  flex: 1 1 auto;
-}
-
-.example-full-width {
-  width: 8%;
-  font-size: 15px;
 }
 
 .mat-tab-group {
