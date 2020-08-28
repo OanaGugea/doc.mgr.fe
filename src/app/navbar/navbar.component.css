@@ -1,6 +1,10 @@
 .colourtoolbar{
 background:#11cdef;
 color:white;
+z-index: 2;
+   position: fixed;
+   top: 0px;
+   width: 100%;
 
 }
 .form-control {
@@ -20,6 +24,18 @@ color:white;
   box-shadow:none;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+.form-control:focus {
+  color: #8898aa;
+  background-color: #fff;
+  border-color: rgba(50, 151, 211, 0.25);
+  outline: 0;
+  box-shadow: none, none;
+}
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
+
 .spacer {
   flex: 1 1 auto;
  
