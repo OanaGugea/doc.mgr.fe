@@ -15,9 +15,13 @@ import { HomeComponent } from './components/home/home.component';
 import { ColectariComponent } from './components/colectari/colectari.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ClientDialogComponent } from './components/client-dialog/client-dialog.component';
+import { ObservatiiComponent } from './components/observatii/observatii.component';
+import { AdaugaCompanieComponent } from './components/adauga-companie/adauga-companie.component';
+import { MesajeComponent } from './components/mesaje/mesaje.component';
+import { ActivitateComponent } from './components/activitate/activitate.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, VanzariComponent, HomeComponent, ColectariComponent, ClientDialogComponent],
+  declarations: [AppComponent, NavbarComponent, VanzariComponent, HomeComponent, ColectariComponent, ClientDialogComponent, ObservatiiComponent, AdaugaCompanieComponent, MesajeComponent, ActivitateComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -32,6 +36,10 @@ import { ClientDialogComponent } from './components/client-dialog/client-dialog.
     RouterModule.forRoot([
       {path: 'vanzari', component: VanzariComponent},
       {path: 'colectari', component: ColectariComponent},
+      {path: 'observatii',component:ObservatiiComponent},
+      {path: 'mesaje',component:MesajeComponent},
+      {path:'adauga-companie',component:AdaugaCompanieComponent},
+      {path: 'activitate', component:ActivitateComponent},
       {path: '**', component: HomeComponent},
     ]),
   ],
