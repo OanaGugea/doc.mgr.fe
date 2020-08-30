@@ -10,18 +10,27 @@ import { MatInputModule } from "@angular/material/input";
 import { RouterModule } from "@angular/router";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatListModule } from "@angular/material/list";
-import { VanzariComponent } from "./components/vanzari/vanzari.component";
+import { SalesComponent } from "./components/sales/sales.component";
 import { HomeComponent } from './components/home/home.component';
-import { ColectariComponent } from './components/colectari/colectari.component';
-import {MatDialogModule} from '@angular/material/dialog';
-import { ClientDialogComponent } from './components/client-dialog/client-dialog.component';
-import { ObservatiiComponent } from './components/observatii/observatii.component';
-import { AdaugaCompanieComponent } from './components/adauga-companie/adauga-companie.component';
-import { MesajeComponent } from './components/mesaje/mesaje.component';
-import { ActivitateComponent } from './components/activitate/activitate.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MessagesComponent } from './components/messages/messages.component';
+import { CollectionsComponent } from './components/collections/collections.component';
+import { ActivityComponent } from './components/activity/activity.component';
+import { ObservationsComponent } from './components/observations/observations.component'
+import { AddCompanyComponent } from './components/add-company/add-company.component';
+
+
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, VanzariComponent, HomeComponent, ColectariComponent, ClientDialogComponent, ObservatiiComponent, AdaugaCompanieComponent, MesajeComponent, ActivitateComponent],
+  declarations: [AppComponent,
+    NavbarComponent,
+    SalesComponent,
+    HomeComponent,
+    CollectionsComponent,
+    ObservationsComponent,
+    AddCompanyComponent,
+    MessagesComponent,
+    ActivityComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -34,16 +43,16 @@ import { ActivitateComponent } from './components/activitate/activitate.componen
     MatListModule,
     MatDialogModule,
     RouterModule.forRoot([
-      {path: 'vanzari', component: VanzariComponent},
-      {path: 'colectari', component: ColectariComponent},
-      {path: 'observatii',component:ObservatiiComponent},
-      {path: 'mesaje',component:MesajeComponent},
-      {path:'adauga-companie',component:AdaugaCompanieComponent},
-      {path: 'activitate', component:ActivitateComponent},
-      {path: '**', component: HomeComponent},
+      { path: 'vanzari', component: SalesComponent },
+      { path: 'colectari', component: CollectionsComponent },
+      { path: 'observatii', component: ObservationsComponent },
+      { path: 'mesaje', component: MessagesComponent },
+      { path: 'adauga-companie', component: AddCompanyComponent },
+      { path: 'activitate', component: ActivityComponent },
+      { path: '**', component: HomeComponent },
     ]),
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

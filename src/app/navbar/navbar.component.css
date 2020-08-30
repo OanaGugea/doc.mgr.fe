@@ -25,7 +25,7 @@
   vertical-align: middle; 
 }
 
-.form-control {
+.search-from-navbar {
   display: block;
   margin-left: 2%;
   width: 10%;
@@ -43,13 +43,13 @@
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form-control:focus {
+.search-from-navbar:focus {
   border-color: rgba(50, 151, 211, 0.25);
   outline: 0;
   box-shadow: none, none;
 }
 
-.form-control::placeholder {
+.search-from-navbar::placeholder {
   color: white;
   opacity: 1;
 }
