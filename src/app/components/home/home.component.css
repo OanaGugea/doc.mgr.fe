@@ -4,8 +4,8 @@
     top:50px;
     margin-left:60%;
     position: relative;
-
 }
+/* card fiind tot chenaru */
 .card {
     position: relative;
     display: flex;
@@ -127,8 +127,8 @@
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)
 }
 .my-4 {
-    margin-top: 1.5rem!important
+    margin-top: 1.5rem
 }
 .my-4{
-    margin-bottom: 1.5rem!important
+    margin-bottom: 1.5rem
 }
