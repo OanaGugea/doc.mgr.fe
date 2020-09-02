@@ -18,6 +18,7 @@ import { CollectionsComponent } from './components/collections/collections.compo
 import { ActivityComponent } from './components/activity/activity.component';
 import { ObservationsComponent } from './components/observations/observations.component'
 import { AddCompanyComponent } from './components/add-company/add-company.component';
+import { AppServices } from './services/common.service';
 
 
 
@@ -52,7 +53,7 @@ import { AddCompanyComponent } from './components/add-company/add-company.compon
       { path: '**', component: HomeComponent },
     ]),
   ],
-  providers: [],
+  providers: [AppServices],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
