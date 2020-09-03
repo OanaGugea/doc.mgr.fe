@@ -10,3 +10,17 @@ button,
 input{ 
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+.navbar-content,
+.search-from-navbar,
+.btn-primary
+{
+    background-color: #248498;
+}
+
+.btn-primary{
+    border-color:#226170;
+}
+/* autentification message from card log-in */
+.text-muted{
+    color: #248498;
+}

@@ -1,7 +1,7 @@
 .log-in{
     width: 35%;
     position: relative;
-    top:50px;
+    top:150px;
     margin-left:60%;
     position: relative;
 }
@@ -47,7 +47,7 @@
     
 }
 .text-muted {
-    color: #00b4d6!important
+/*  */
 }
 .mb-4{
     margin-bottom: 1.5rem!important
@@ -122,8 +122,6 @@
 
 .btn-primary {
     color: #fff;
-    border-color: #11cdef;
-    background-color: #11cdef;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)
 }
 .my-4 {
