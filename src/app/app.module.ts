@@ -18,11 +18,16 @@ import { CollectionsComponent } from './components/collections/collections.compo
 import { ActivityComponent } from './components/activity/activity.component';
 import { ObservationsComponent } from './components/observations/observations.component'
 import { AddCompanyComponent } from './components/add-company/add-company.component';
-
-
+import {ProgressBarModule} from 'primeng/progressbar';
+import {TableModule} from 'primeng/table';
+import { OceanTableComponent } from './common/ocean-table/ocean-table.component';
+import { OceanNoteComponent } from './common/ocean-note/ocean-note.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {TabMenuModule} from 'primeng/tabmenu';
 
 @NgModule({
-  declarations: [AppComponent,
+  declarations: [
+    AppComponent,
     NavbarComponent,
     SalesComponent,
     HomeComponent,
@@ -30,9 +35,13 @@ import { AddCompanyComponent } from './components/add-company/add-company.compon
     ObservationsComponent,
     AddCompanyComponent,
     MessagesComponent,
-    ActivityComponent],
+    ActivityComponent,
+    OceanTableComponent,
+    OceanNoteComponent
+  ],
   imports: [
     BrowserModule,
+    ProgressBarModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
@@ -51,6 +60,9 @@ import { AddCompanyComponent } from './components/add-company/add-company.compon
       { path: 'activitate', component: ActivityComponent },
       { path: '**', component: HomeComponent },
     ]),
+    TableModule,
+    NgbModule,
+    TabMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

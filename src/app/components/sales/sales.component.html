@@ -1,37 +1,59 @@
-<div class="list-container">
-  <mat-list role="lista">
-    <mat-list-item role="listitem" *ngFor="let client of clienti">
-      <div>
-        <button mat-button>
-          {{ client }}
-        </button>
 
-      </div>
-    </mat-list-item>
-  </mat-list>
-
-  <mat-tab-group animationDuration="0ms">
-    <mat-tab label="ALERTE">
-      <div class="alerta" *ngFor="let alerte of alerta">
-        {{ alerte }}
-      </div>
-    </mat-tab>
-    <mat-tab label="OBSERVATII">
-      <div class="observatie" *ngFor="let observatii of observatie">
-        {{ observatii }}
-      </div>
-    </mat-tab>
-    <mat-tab label="SARCINI">
-      <div class="sarcina" *ngFor="let sarcini of sarcina">
-        {{ sarcini }}
-      </div>
-    </mat-tab>
-  </mat-tab-group>
-</div>
-
-<div class="example-button-row">
-  <button mat-raised-button color="primary">MODELE ACTE 1</button>
-  <button mat-raised-button color="primary">MODELE ACTE 2</button>
-  <button mat-raised-button color="primary">MODELE ACTE 3</button>
-  <button mat-raised-button color="primary">MODELE ACTE 4</button>
+<div class="row" style="height: 92vh;margin:1vh 0 0 0">
+  <div class="col-md-6">
+    <ocean-table
+      [columns]="columns"
+      [items]="clients"
+    ></ocean-table>
+  </div>
+  <div class="col-md-6">
+    <!-- <p-tabMenu [model]="items">
+      <ng-template pTemplate="item" let-item let-i="index">
+          {{item.label}}
+      </ng-template>
+    </p-tabMenu> -->
+    <ngb-tabset [justify]="'fill'" class="custom-tab-content flex-column flex-md-row" type="pills">
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+           Alerte
+        </ng-template>
+          <ng-template ngbTabContent>
+            <div *ngFor="let alert of alerts;let i = index">
+              <ocean-note        
+                [title]="alert.title"
+                [textContent]="alert.textContent">
+              </ocean-note>
+            </div>
+          </ng-template>
+      </ngb-tab>
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+           Observatii
+        </ng-template>
+          <ng-template ngbTabContent>
+            <div *ngFor="let observation of observations;let i = index">
+              <ocean-note
+                [backgroundColor]="'#cfc'"        
+                [title]="observation.title"
+                [textContent]="observation.textContent">
+              </ocean-note>
+            </div>
+          </ng-template>
+      </ngb-tab>
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+            Sarcini
+        </ng-template>
+          <ng-template ngbTabContent>
+            <div *ngFor="let task of tasks;let i = index">
+              <ocean-note              
+                [backgroundColor]="'#ccf'"        
+                [title]="task.title"
+                [textContent]="task.textContent">
+              </ocean-note>
+            </div>
+          </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
 </div>
