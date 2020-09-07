@@ -19,8 +19,8 @@ import { ActivityComponent } from './components/activity/activity.component';
 import { ObservationsComponent } from './components/observations/observations.component'
 import { AddCompanyComponent } from './components/add-company/add-company.component';
 import { AppServices } from './services/common.service';
-
-
+import { FormsModule } from '@angular/forms';
+import { Login } from './models/login';
 
 @NgModule({
   declarations: [AppComponent,
@@ -43,6 +43,7 @@ import { AppServices } from './services/common.service';
     MatTabsModule,
     MatListModule,
     MatDialogModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: 'vanzari', component: SalesComponent },
       { path: 'colectari', component: CollectionsComponent },
