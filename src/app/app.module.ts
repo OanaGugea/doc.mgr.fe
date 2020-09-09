@@ -11,7 +11,6 @@ import { RouterModule } from "@angular/router";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatListModule } from "@angular/material/list";
 import { SalesComponent } from "./components/sales/sales.component";
-import { HomeComponent } from './components/home/home.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MessagesComponent } from './components/messages/messages.component';
 import { CollectionsComponent } from './components/collections/collections.component';
@@ -29,6 +28,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {TabMenuModule} from 'primeng/tabmenu';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -36,14 +37,15 @@ import { HttpModule } from '@angular/http';
     AppComponent,
     NavbarComponent,
     SalesComponent,
-    HomeComponent,
+    LoginComponent,
     CollectionsComponent,
     ObservationsComponent,
     AddCompanyComponent,
     MessagesComponent,
     ActivityComponent,
     OceanTableComponent,
-    OceanNoteComponent
+    OceanNoteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

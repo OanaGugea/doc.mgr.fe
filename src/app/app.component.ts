@@ -8,7 +8,7 @@ import { AppServices } from './services/common.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proiect';
+  title = 'Document Manager';
   public isConnected = false;
   public subscription: Subscription;
 
