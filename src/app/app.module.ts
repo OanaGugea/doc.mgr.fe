@@ -27,6 +27,9 @@ import { OceanTableComponent } from './common/ocean-table/ocean-table.component'
 import { OceanNoteComponent } from './common/ocean-note/ocean-note.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {TabMenuModule} from 'primeng/tabmenu';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -67,6 +70,8 @@ import {TabMenuModule} from 'primeng/tabmenu';
     TableModule,
     NgbModule,
     TabMenuModule,
+    HttpClientModule,
+    HttpModule,
   ],
   providers: [AppServices],
   bootstrap: [AppComponent],
