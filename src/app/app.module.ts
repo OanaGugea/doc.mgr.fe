@@ -21,9 +21,16 @@ import { AddCompanyComponent } from './components/add-company/add-company.compon
 import { AppServices } from './services/common.service';
 import { FormsModule } from '@angular/forms';
 import { Login } from './models/login';
+import {ProgressBarModule} from 'primeng/progressbar';
+import {TableModule} from 'primeng/table';
+import { OceanTableComponent } from './common/ocean-table/ocean-table.component';
+import { OceanNoteComponent } from './common/ocean-note/ocean-note.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {TabMenuModule} from 'primeng/tabmenu';
 
 @NgModule({
-  declarations: [AppComponent,
+  declarations: [
+    AppComponent,
     NavbarComponent,
     SalesComponent,
     HomeComponent,
@@ -31,9 +38,13 @@ import { Login } from './models/login';
     ObservationsComponent,
     AddCompanyComponent,
     MessagesComponent,
-    ActivityComponent],
+    ActivityComponent,
+    OceanTableComponent,
+    OceanNoteComponent
+  ],
   imports: [
     BrowserModule,
+    ProgressBarModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
@@ -53,6 +64,9 @@ import { Login } from './models/login';
       { path: 'activitate', component: ActivityComponent },
       { path: '**', component: HomeComponent },
     ]),
+    TableModule,
+    NgbModule,
+    TabMenuModule,
   ],
   providers: [AppServices],
   bootstrap: [AppComponent],
