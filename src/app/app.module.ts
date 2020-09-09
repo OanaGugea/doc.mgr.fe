@@ -18,6 +18,9 @@ import { CollectionsComponent } from './components/collections/collections.compo
 import { ActivityComponent } from './components/activity/activity.component';
 import { ObservationsComponent } from './components/observations/observations.component'
 import { AddCompanyComponent } from './components/add-company/add-company.component';
+import { AppServices } from './services/common.service';
+import { FormsModule } from '@angular/forms';
+import { Login } from './models/login';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {TableModule} from 'primeng/table';
 import { OceanTableComponent } from './common/ocean-table/ocean-table.component';
@@ -51,6 +54,7 @@ import {TabMenuModule} from 'primeng/tabmenu';
     MatTabsModule,
     MatListModule,
     MatDialogModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: 'vanzari', component: SalesComponent },
       { path: 'colectari', component: CollectionsComponent },
@@ -64,7 +68,7 @@ import {TabMenuModule} from 'primeng/tabmenu';
     NgbModule,
     TabMenuModule,
   ],
-  providers: [],
+  providers: [AppServices],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
