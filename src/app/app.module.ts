@@ -26,12 +26,16 @@ import { OceanNoteComponent } from './common/ocean-note/ocean-note.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
-
-
+import {AccordionModule} from 'primeng/accordion';
+import { ClientComponent } from './components/client/client.component';
+import { OceanAccordionComponent } from './common/ocean-accordion/ocean-accordion.component';
+import { OceanDropdownComponent } from './common/ocean-dropdown/ocean-dropdown.component';
+import {DropdownModule} from 'primeng/dropdown';
+import {InputSwitchModule} from 'primeng/inputswitch';
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,10 +49,15 @@ import { LoginServices } from './services/login.services';
     ActivityComponent,
     OceanTableComponent,
     OceanNoteComponent,
-    HomeComponent
+    HomeComponent,
+    ClientComponent,
+    OceanAccordionComponent,
+    OceanDropdownComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
+    FormsModule,
     ProgressBarModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -67,13 +76,16 @@ import { LoginServices } from './services/login.services';
       { path: 'mesaje', component: MessagesComponent },
       { path: 'adauga-companie', component: AddCompanyComponent },
       { path: 'activitate', component: ActivityComponent },
+      { path:'client',component: ClientComponent},
       { path: '**', component: HomeComponent },
     ]),
     TableModule,
+    AccordionModule,
     NgbModule,
     TabMenuModule,
     HttpClientModule,
-    HttpModule,
+    DropdownModule,
+    InputSwitchModule
   ],
   providers: [AppServices, LoginServices],
   bootstrap: [AppComponent],
