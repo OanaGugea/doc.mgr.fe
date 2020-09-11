@@ -29,7 +29,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {TabMenuModule} from 'primeng/tabmenu';
 import { AddUsersComponent } from './components/add-users/add-users.component';
 import {DropdownModule} from 'primeng/dropdown';
+import {PasswordModule} from 'primeng/password';
 import {ButtonModule} from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
+import {TabViewModule} from 'primeng/tabview';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +49,8 @@ import {ButtonModule} from 'primeng/button';
     AddUsersComponent
   ],
   imports: [
+    InputTextModule,
+    TabViewModule,
     BrowserModule,
     ProgressBarModule,
     ButtonModule,
@@ -61,6 +66,7 @@ import {ButtonModule} from 'primeng/button';
     FormsModule,
     ReactiveFormsModule,
     DropdownModule,
+    PasswordModule,
     RouterModule.forRoot([
       {path:'add-user',component:AddUsersComponent},
       { path: 'vanzari', component: SalesComponent },
