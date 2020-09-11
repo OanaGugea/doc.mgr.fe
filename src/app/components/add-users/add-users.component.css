@@ -1,0 +1,79 @@
+.register{
+    margin-left:25%;
+    width: 50%;
+    font-weight: 500;
+    border: 2px solid black;
+    border-color: #248498;
+    border-radius: 10px;
+    border:20%;
+    padding: 20px; 
+    background-color:#f7fafc;  
+    
+}
+.register-head{
+    margin-left:38%;
+    font-size: 150%;
+    font-weight: bold;
+
+}
+.register-body{
+    margin-left:20%;
+}
+.submit-button{
+    margin-left:26%;
+}
+
+:host >>> input[type="text" i] {
+    padding: 7px 7px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+}
+
+:host >>> input[type="password" i] {
+    padding: 15px 12px;
+    height:34%;
+    border: 1px solid #ced4da;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    border-radius: 3px;
+}
+:host >>> .p-dropdown{
+    width:111%;
+}
+:host >>> .p-dropdown-label{
+    padding: 7px 7px;
+}
+:host >>> .p-inputtext {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.first{
+    padding: 0.1rem;
+    
+}
+.p-field[_ngcontent-cec-c134] {
+    margin-bottom: 0rem;
+    margin-right: 3rem;
+    flex-grow: 1;
+}
+.p-col {
+    flex-grow: 0;
+    flex-basis: 0;
+    padding: 0.5rem;
+}
+.p-field {
+    margin-bottom: 0rem;
+}
+
+:host >>> .p-button{
+    color: #ffffff;
+    background: #248498 !important;
+    border: 1px solid #248498;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 3px;
+}
+
+:host >>> .pi-times:before {
+    /* content: "\e90b"; */
+    content:none;
+}

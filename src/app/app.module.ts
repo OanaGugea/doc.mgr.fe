@@ -19,7 +19,7 @@ import { ActivityComponent } from './components/activity/activity.component';
 import { ObservationsComponent } from './components/observations/observations.component'
 import { AddCompanyComponent } from './components/add-company/add-company.component';
 import { AppServices } from './services/common.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { Login } from './models/login';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {TableModule} from 'primeng/table';
@@ -27,7 +27,9 @@ import { OceanTableComponent } from './common/ocean-table/ocean-table.component'
 import { OceanNoteComponent } from './common/ocean-note/ocean-note.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {TabMenuModule} from 'primeng/tabmenu';
-
+import { AddUsersComponent } from './components/add-users/add-users.component';
+import {DropdownModule} from 'primeng/dropdown';
+import {ButtonModule} from 'primeng/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,11 +42,13 @@ import {TabMenuModule} from 'primeng/tabmenu';
     MessagesComponent,
     ActivityComponent,
     OceanTableComponent,
-    OceanNoteComponent
+    OceanNoteComponent,
+    AddUsersComponent
   ],
   imports: [
     BrowserModule,
     ProgressBarModule,
+    ButtonModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
@@ -55,7 +59,10 @@ import {TabMenuModule} from 'primeng/tabmenu';
     MatListModule,
     MatDialogModule,
     FormsModule,
+    ReactiveFormsModule,
+    DropdownModule,
     RouterModule.forRoot([
+      {path:'add-user',component:AddUsersComponent},
       { path: 'vanzari', component: SalesComponent },
       { path: 'colectari', component: CollectionsComponent },
       { path: 'observatii', component: ObservationsComponent },
