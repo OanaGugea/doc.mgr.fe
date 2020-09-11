@@ -1,0 +1,32 @@
+<div style="margin:0px;height: 93%;">
+    <div class="row" style="height: 50%;margin:0px;">
+        <div class="col-md-4" style="overflow:auto;">
+            <ocean-accordion [items]="contactPersons"></ocean-accordion>
+        </div>
+        <div class="col-md-4" style="overflow:auto">
+            
+            <ocean-dropdown 
+                [items]="timeScales" 
+                [(selectedItem)]="selectedTime"
+                (selectedItemChange)="onSelectTimeRange($event)"
+            ></ocean-dropdown>{{selectedTime.label}}
+            <p-inputSwitch [(ngModel)]="isAdministrare"></p-inputSwitch>
+            <p-inputSwitch [(ngModel)]="isAcordDeLucru"></p-inputSwitch>
+
+        </div>
+        <div class="col-md-4" style="overflow:auto">
+            <ocean-accordion [items]="contactPersons"></ocean-accordion>
+        </div>
+    </div>
+    <div class="row" style="height: 50%;margin:0px;">
+        <div class="col-md-4" style="overflow:auto">
+            <ocean-accordion [items]="contactPersons"></ocean-accordion>
+        </div>
+        <div class="col-md-4" style="overflow:auto">
+            <ocean-accordion [items]="contactPersons"></ocean-accordion>
+        </div>
+        <div class="col-md-4" style="overflow:auto">
+            <ocean-accordion [items]="contactPersons"></ocean-accordion>
+        </div>
+    </div>
+</div>

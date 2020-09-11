@@ -38,6 +38,12 @@ import { LoginServices } from './services/login.services';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 
+import {AccordionModule} from 'primeng/accordion';
+import { ClientComponent } from './components/client/client.component';
+import { OceanAccordionComponent } from './common/ocean-accordion/ocean-accordion.component';
+import { OceanDropdownComponent } from './common/ocean-dropdown/ocean-dropdown.component';
+import {InputSwitchModule} from 'primeng/inputswitch';
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,12 +58,18 @@ import { MessageService } from 'primeng/api';
     OceanTableComponent,
     OceanNoteComponent,
     AddUsersComponent,
-    HomeComponent
+    HomeComponent,
+    HomeComponent,
+    ClientComponent,
+    OceanAccordionComponent,
+    OceanDropdownComponent
   ],
   imports: [
     InputTextModule,
     TabViewModule,
     BrowserModule,
+    CommonModule,
+    FormsModule,
     ProgressBarModule,
     ButtonModule,
     BrowserAnimationsModule,
@@ -82,9 +94,11 @@ import { MessageService } from 'primeng/api';
       { path: 'mesaje', component: MessagesComponent },
       { path: 'adauga-companie', component: AddCompanyComponent },
       { path: 'activitate', component: ActivityComponent },
+      { path:'client',component: ClientComponent},
       { path: '**', component: HomeComponent },
     ]),
     TableModule,
+    AccordionModule,
     NgbModule,
     TabMenuModule,
     HttpClientModule,

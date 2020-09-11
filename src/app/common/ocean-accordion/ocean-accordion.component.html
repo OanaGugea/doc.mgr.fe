@@ -1,0 +1,10 @@
+<p-accordion>
+    <p-accordionTab *ngFor="let item of items;" header="{{item.header}}">
+        <div *ngFor="let item of item.content | keyvalue">
+            <div style="display: flex;flex-flow: row;">                
+                <h1 style="font-size: larger">{{item.key}}</h1> 
+                <p style="margin:0 2px;">:{{item.value}}</p>
+            </div>
+        </div>
+    </p-accordionTab>
+</p-accordion>
