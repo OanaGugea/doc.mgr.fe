@@ -20,6 +20,10 @@ input {
   background-color: #555b6e;
 }
 
+.search-from-navbar:focus {
+  border-color: #555b6e;
+}
+
 .log-in-button {
   border-color: #89b0ae;
 }
@@ -39,10 +43,9 @@ input {
 }
 
 .log-in-input-field:focus,
-.log-in-button:focus,
-.search-from-navbar:focus{
-    outline-color: #89b0ae;
-  }
+.log-in-button:focus {
+  outline-color: #89b0ae;
+}
 
 .log-in-headline {
   color: #89b0ae;
@@ -52,6 +55,11 @@ input {
   background-color: #ffffff;
 }
 
-.log-in-button {
+.log-in-button,
+.navbar-content,
+.home-icon,
+.search-from-navbar::placeholder,
+.search-from-navbar,
+.navbar-link a:hover {
   color: #ffffff;
 }
