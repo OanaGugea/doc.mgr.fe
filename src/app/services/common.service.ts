@@ -1,11 +1,11 @@
-import { Injectable } from "@angular/core";
-import { Observable, Subject } from "rxjs";
+import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
-@Injectable({ providedIn: "root" })
+@Injectable({ providedIn: 'root' })
 export class AppServices {
   private subject = new Subject<any>();
 
-  constructor() {}
+  constructor() { }
 
   sendMessage() {
     this.subject.next();

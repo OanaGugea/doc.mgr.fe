@@ -1,7 +1,7 @@
 <div class="page-container">
   <div *ngIf="isConnected">
-    <navbar></navbar>
+    <app-navbar></app-navbar>
     <router-outlet> </router-outlet>
   </div>
-  <login *ngIf="!isConnected"></login>
+  <app-login *ngIf="!isConnected"></app-login>
 </div>

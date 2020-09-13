@@ -6,9 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./ocean-note.component.css']
 })
 export class OceanNoteComponent implements OnInit {
-  @Input() backgroundColor:string='#ffc';
-  @Input() title:string;
-  @Input() textContent:string;
+  @Input() backgroundColor = '#ffc';
+  @Input() title: string;
+  @Input() textContent: string;
   constructor() { }
 
   ngOnInit(): void {
