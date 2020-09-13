@@ -10,7 +10,8 @@ export class AppServices {
   constructor(private http: HttpClient) {}
 
   sendMessage(email: string, pass: string) {
-    this.sendGetRequest(email, pass);
+    // this.sendGetRequest(email, pass);
+    this.subject.next();
   }
 
   getMessage(): Observable<any> {
