@@ -11,8 +11,14 @@ input {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.page-container{
+
+h4{
+  color: #89b0ae;
+  text-align: center;
+}
+.page-container {
   background-color: #faf9f9;
+  height: 100%;
 }
 
 .navbar-content,

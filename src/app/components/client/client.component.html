@@ -1,31 +1,127 @@
 <div style="margin:0px;height: 93%;">
     <div class="row" style="height: 50%;margin:0px;">
-        <div class="col-md-4" style="overflow:auto;">
-            <ocean-accordion [items]="contactPersons"></ocean-accordion>
+        <div class="col-md-4" style="height:100%">
+            <h4>Detalii client</h4>
+            <div style="width: 100%;" style="overflow:auto;height: 90%;">
+                <div class="vertical-form">
+                    <label for="firstname1">Nume</label>
+                    <input id="firstname1" type="text" pInputText> 
+                </div>
+                <div class="vertical-form">
+                    <label for="lastname1">CUI</label>
+                    <input id="lastname1" type="text" pInputText> 
+                </div>
+                <div class="vertical-form">
+                    <label for="firstname1">Cod fiscal</label>
+                    <input id="firstname1" type="text" pInputText> 
+                </div>
+                <div class="vertical-form">
+                    <label for="lastname1">Telefon</label>
+                    <input id="lastname1" type="text" pInputText> 
+                </div>
+                <div class="vertical-form">
+                    <label for="firstname1">Fax</label>
+                    <input id="firstname1" type="text" pInputText> 
+                </div>
+                <div class="vertical-form">
+                    <label for="lastname1">Sediu</label>
+                    <input id="lastname1" type="text" pInputText> 
+                </div>
+                <div class="vertical-form">
+                    <label for="lastname1">Cont bancar  </label>
+                    <input id="lastname1" type="text" pInputText> 
+                </div>
+            </div>
         </div>
         <div class="col-md-4" style="overflow:auto">
-            
-            <ocean-dropdown 
-                [items]="timeScales" 
-                [(selectedItem)]="selectedTime"
-                (selectedItemChange)="onSelectTimeRange($event)"
-            ></ocean-dropdown>{{selectedTime.label}}
-            <p-inputSwitch [(ngModel)]="isAdministrare"></p-inputSwitch>
-            <p-inputSwitch [(ngModel)]="isAcordDeLucru"></p-inputSwitch>
+            <h4>Stadiu proiect</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="lastname1">Stadiu proiect</label>
+                </div>
+                <div class="col-md-8">
+                    <input id="lastname1" type="text" pInputText> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="lastname1">Contact</label>
+                </div>
+                <div class="col-md-8">
+                    <input id="lastname1" type="text" pInputText> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="lastname1">Data semnare contract</label>
+                </div>
+                <div class="col-md-8">
+                    <input id="lastname1" type="text" pInputText> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="lastname1">Administrare</label>
+                </div>
+                <div class="col-md-8">
+                    <p-inputSwitch [(ngModel)]="isAdministrare"></p-inputSwitch>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="lastname1">Acord de lucru</label>
+                </div>
+                <div class="col-md-8">
+                    <p-inputSwitch [(ngModel)]="isAcordDeLucru"></p-inputSwitch>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="lastname1">Data semnare acord de lucru</label>
+                </div>
+                <div class="col-md-8">
+                    <input id="lastname1" type="text" pInputText> 
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="lastname1">numar acord</label>
+                </div>
+                <div class="col-md-8">
+                    <input id="lastname1" type="text" pInputText> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="lastname1">Perioada acord</label>
+                </div>
+                <div class="col-md-8">
+                    <ocean-dropdown 
+                        [items]="timeScales" 
+                        [(selectedItem)]="selectedTime"
+                        (selectedItemChange)="onSelectTimeRange($event)"
+                ></ocean-dropdown>{{selectedTime.label}}
+                </div>
+            </div>
 
         </div>
         <div class="col-md-4" style="overflow:auto">
+            <h4>Documente</h4>
             <ocean-accordion [items]="contactPersons"></ocean-accordion>
         </div>
     </div>
     <div class="row" style="height: 50%;margin:0px;">
-        <div class="col-md-4" style="overflow:auto">
+        <div class="col-md-4" style="overflow:auto;">
+            <h4>Persone de contact</h4>
             <ocean-accordion [items]="contactPersons"></ocean-accordion>
         </div>
         <div class="col-md-4" style="overflow:auto">
+            <h4>Discutii cu clientul</h4>
             <ocean-accordion [items]="contactPersons"></ocean-accordion>
         </div>
         <div class="col-md-4" style="overflow:auto">
+            <h4>Stadiu debitori</h4>
             <ocean-accordion [items]="contactPersons"></ocean-accordion>
         </div>
     </div>

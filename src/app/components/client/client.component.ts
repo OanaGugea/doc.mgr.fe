@@ -2,6 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { AccordionContent } from 'src/app/common/ocean-accordion/ocean-accordion.component';
 import { SelectItem } from 'primeng/api';
 
+export interface ClientDetails{
+  companyName:string;
+  registerCode:string;
+  fiscalCode:string;
+  telephoneNo:string;
+  fax:string;
+  headquarter:string;
+  bankAccount:string;
+  bank:string;
+  importantNotes:string;
+  website:string;
+}
+
 @Component({
   selector: 'app-client',
   templateUrl: './client.component.html',
@@ -23,6 +36,24 @@ export class ClientComponent implements OnInit {
     {header:'John Doe',content:{telefon:"21312",email:'ceva@ceva.com'}},
     {header:'John Doe',content:{telefon:"21312",email:'ceva@ceva.com'}},
   ]
+
+  selectedState: any = null;
+
+  states: any[] = [
+      {name: 'Arizona', code: 'Arizona'},
+      {name: 'California', value: 'California'},
+      {name: 'Florida', code: 'Florida'},
+      {name: 'Ohio', code: 'Ohio'},
+      {name: 'Washington', code: 'Washington'}
+  ];
+
+  cities1: any[] = [];
+  
+  cities2: any[] = [];
+  
+  city1:any = null;
+
+  city2:any = null;
   constructor() { }
 
   ngOnInit(): void {
