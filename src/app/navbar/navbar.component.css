@@ -19,7 +19,7 @@
 }
 
 .home-icon {
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 .search-from-navbar {
@@ -47,6 +47,6 @@
   opacity: 1;
 }
 
-.navbar-link a:hover{
+.navbar-link a:hover {
   text-decoration: none;
 }
