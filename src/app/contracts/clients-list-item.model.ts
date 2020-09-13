@@ -1,6 +1,6 @@
-export interface IClientsListItem{
-    name:string;
-    status:string;
+export interface IClientsListItem {
+    name: string;
+    status: string;
 }
 
 export interface Country {
