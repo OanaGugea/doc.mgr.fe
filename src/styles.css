@@ -1,26 +1,81 @@
-html, 
-body{ 
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-body{
-     margin: 0;
+body {
+  margin: 0;
 }
 body,
 button,
-input{ 
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-.navbar-content,
-.search-from-navbar,
-.btn-primary
-{
-    background-color: #248498;
+input {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.btn-primary{
-    border-color:#226170;
+.page-container {
+  background-color: #faf9f9;
 }
-/* autentification message from card log-in */
-.text-muted{
-    color: #248498;
+
+.navbar-content,
+.search-from-navbar {
+  background-color: #555b6e;
+}
+
+.search-from-navbar:focus {
+  border-color: #555b6e;
+}
+
+.log-in-button {
+  border-color: #89b0ae;
+}
+
+.log-in-button {
+  color: #bee3db;
+}
+
+.status-potential{
+    background-color: #bee3db;
+}
+
+.log-in-button:not(:disabled):not(.disabled).active,
+.log-in-button:not(:disabled):not(.disabled):active,
+.show > .log-in-button.dropdown-toggle,
+.log-in-button.focus,
+.log-in-button:focus,
+.log-in-button:hover,
+.log-in-button,
+.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #89b0ae;
+}
+
+.log-in-input-field:focus,
+.log-in-button:focus {
+  outline-color: #89b0ae;
+}
+
+.log-in-headline,
+.sales-tab a {
+  color: #89b0ae;
+}
+
+.log-in-form {
+  background-color: #ffffff;
+}
+
+.log-in-button,
+.navbar-content,
+.home-icon,
+.search-from-navbar::placeholder,
+.search-from-navbar,
+.navbar-link a:hover,
+.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  color: #ffffff;
+}
+
+.status-active{
+    background-color: #ffd6ba;
+}
+
+.status-active,
+.status-potential{
+    color: #000000
 }

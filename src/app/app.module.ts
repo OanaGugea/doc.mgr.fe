@@ -11,7 +11,6 @@ import { RouterModule } from "@angular/router";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatListModule } from "@angular/material/list";
 import { SalesComponent } from "./components/sales/sales.component";
-import { HomeComponent } from './components/home/home.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MessagesComponent } from './components/messages/messages.component';
 import { CollectionsComponent } from './components/collections/collections.component';
@@ -33,12 +32,17 @@ import {PasswordModule} from 'primeng/password';
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
 import {TabViewModule} from 'primeng/tabview';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginServices } from './services/login.services';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SalesComponent,
-    HomeComponent,
+    LoginComponent,
     CollectionsComponent,
     ObservationsComponent,
     AddCompanyComponent,
@@ -46,7 +50,9 @@ import {TabViewModule} from 'primeng/tabview';
     ActivityComponent,
     OceanTableComponent,
     OceanNoteComponent,
-    AddUsersComponent
+    AddUsersComponent,
+    HomeComponent
+
   ],
   imports: [
     InputTextModule,
@@ -80,8 +86,10 @@ import {TabViewModule} from 'primeng/tabview';
     TableModule,
     NgbModule,
     TabMenuModule,
+    HttpClientModule,
+    HttpModule,
   ],
-  providers: [AppServices],
+  providers: [AppServices, LoginServices],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
