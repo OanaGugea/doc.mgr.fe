@@ -10,8 +10,10 @@ export class LoginServices {
   constructor(private http: HttpClient) {}
 
   sendAuthenticationMessage(email: string, pass: string) {
+      if(email === 'admin' && pass === 'adminadmin'){
+        this.subject.next();
+      }
     // this.sendGetRequest(email, pass);
-    this.subject.next();
   }
 
   getAuthenticatedState(): Observable<any> {
