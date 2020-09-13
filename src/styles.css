@@ -1,32 +1,57 @@
-html, 
-body{ 
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-body{
-     margin: 0;
+body {
+  margin: 0;
 }
 body,
 button,
-input{ 
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+input {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.page-container {
+  background-color: #faf9f9;
+}
+
 .navbar-content,
-.search-from-navbar,
-.btn-primary
-{
-    background-color: #248498;
+.search-from-navbar {
+  background-color: #555b6e;
 }
 
-.btn-primary{
-    border-color:#226170;
-}
-/* autentification message from card log-in */
-.text-muted{
-    color: #248498;
+.log-in-button {
+  border-color: #89b0ae;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle,
-.btn-primary.focus, .btn-primary:focus,
-.btn-primary:hover{
-    background-color: #226170;
+.log-in-button {
+  color: #bee3db;
+}
+
+.log-in-button:not(:disabled):not(.disabled).active,
+.log-in-button:not(:disabled):not(.disabled):active,
+.show > .log-in-button.dropdown-toggle,
+.log-in-button.focus,
+.log-in-button:focus,
+.log-in-button:hover,
+.log-in-button {
+  background-color: #89b0ae;
+}
+
+.log-in-input-field:focus,
+.log-in-button:focus,
+.search-from-navbar:focus{
+    outline-color: #89b0ae;
+  }
+
+.log-in-headline {
+  color: #89b0ae;
+}
+
+.log-in-form {
+  background-color: #ffffff;
+}
+
+.log-in-button {
+  color: #ffffff;
 }

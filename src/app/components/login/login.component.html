@@ -1,45 +1,39 @@
 <div class="log-in-page-container">
-  <div class="log-in card bg-secondary shadow border-0">
-    <div class="card-body px-lg-5 py-lg-5">
-      <div class="text-center text-muted mb-4">
+  <div class="log-in-form">
+    <div class="log-in-card-body">
+      <div class="log-in-headline">
         <h3>Autentificare</h3>
       </div>
-      <form role="form">
-        <div class="form-group mb-3" [ngClass]="{ focused: focus === true }">
-          <div class="input-group input-group-alternative">
-            <input
-              class="form-control"
-              [(ngModel)]="login.email"
-              name="email"
-              placeholder="Email"
-              type="email"
-              (focus)="focus = true"
-              (blur)="focus = false"
-            />
-          </div>
+      <form>
+        <div class="log-in-input-field-conatiner">
+          <input
+            class="log-in-input-field"
+            [(ngModel)]="login.email"
+            name="email"
+            placeholder="Email"
+            type="email"
+            (focus)="focus = true"
+            (blur)="focus = false"
+          />
         </div>
-        <div class="form-group" [ngClass]="{ focused: focus1 === true }">
-          <div class="input-group input-group-alternative">
-            <input
-              class="form-control"
-              [(ngModel)]="login.password"
-              name="pass"
-              placeholder="Parola"
-              type="password"
-              (focus)="focus1 = true"
-              (blur)="focus1 = false"
-            />
-          </div>
+        <div class="log-in-input-field-conatiner">
+          <input
+            class="log-in-input-field"
+            [(ngModel)]="login.password"
+            name="pass"
+            placeholder="Parola"
+            type="password"
+            (focus)="focus1 = true"
+            (blur)="focus1 = false"
+          />
         </div>
-        <div class="text-center">
-          <button
-            type="button"
-            class="btn btn-primary my-4"
-            (click)="conecting()"
-          >
-            Conectare
-          </button>
-        </div>
+        <button
+          type="button"
+          class="log-in-button"
+          (click)="conecting()"
+        >
+          Conectare
+        </button>
       </form>
     </div>
   </div>
