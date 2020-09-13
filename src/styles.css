@@ -32,13 +32,18 @@ input {
   color: #bee3db;
 }
 
+.status-potential{
+    background-color: #bee3db;
+}
+
 .log-in-button:not(:disabled):not(.disabled).active,
 .log-in-button:not(:disabled):not(.disabled):active,
 .show > .log-in-button.dropdown-toggle,
 .log-in-button.focus,
 .log-in-button:focus,
 .log-in-button:hover,
-.log-in-button {
+.log-in-button,
+.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: #89b0ae;
 }
 
@@ -47,7 +52,8 @@ input {
   outline-color: #89b0ae;
 }
 
-.log-in-headline {
+.log-in-headline,
+.sales-tab a {
   color: #89b0ae;
 }
 
@@ -60,6 +66,16 @@ input {
 .home-icon,
 .search-from-navbar::placeholder,
 .search-from-navbar,
-.navbar-link a:hover {
+.navbar-link a:hover,
+.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   color: #ffffff;
+}
+
+.status-active{
+    background-color: #ffd6ba;
+}
+
+.status-active,
+.status-potential{
+    color: #000000
 }
