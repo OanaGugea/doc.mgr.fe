@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { AppServices } from './services/common.service';
+import { LoginServices } from './services/login.services';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +13,8 @@ export class AppComponent {
   public isConnected = false;
   public subscription: Subscription;
 
-  constructor(private service: AppServices) {
-    this.subscription = this.service.getMessage().subscribe( () => {
+  constructor(private service: LoginServices) {
+    this.subscription = this.service.getAuthenticatedState().subscribe( () => {
       this.isConnected = true;
     }
     );

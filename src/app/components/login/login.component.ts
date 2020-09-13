@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { AppServices } from "src/app/services/common.service";
 import { Login } from "src/app/models/login";
+import { LoginServices } from 'src/app/services/login.services';
 
 @Component({
   selector: "login",
@@ -15,7 +16,7 @@ export class LoginComponent implements OnInit {
   private email: string = "";
   public login: any;
 
-  constructor(private service: AppServices) {}
+  constructor(private service: LoginServices) {}
 
   ngOnInit(): void {
     this.login = new Login("", "");
@@ -24,6 +25,6 @@ export class LoginComponent implements OnInit {
   public conecting(): void {
     console.log("Email:" + this.login.email);
     console.log("Password:" + this.login.password);
-    this.service.sendMessage(this.login.email, this.login.password);
+    this.service.sendAuthenticationMessage(this.login.email, this.login.password);
   }
 }

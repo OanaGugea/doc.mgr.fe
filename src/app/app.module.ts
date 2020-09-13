@@ -30,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
+import { LoginServices } from './services/login.services';
 
 
 @NgModule({
@@ -75,7 +76,7 @@ import { HomeComponent } from './components/home/home.component';
     HttpClientModule,
     HttpModule,
   ],
-  providers: [AppServices],
+  providers: [AppServices, LoginServices],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
