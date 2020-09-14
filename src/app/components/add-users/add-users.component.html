@@ -1,52 +1,47 @@
 <div class="register">
     <div class="register-head"> Inregistrare </div>
-    <br />
-    <br />
     <div class="register-body">
         <!-- first and last name -->
-        <div class="p-fluid p-formgrid p-grid">
-            <div class="p-field p-col">
-                <label for="firstname">Nume </label>
+        <div class="register-inputs">
+            <div class="register-body-firstname">
+                <label class="spaces" for="firstname">Nume </label>
                 <input [(ngModel)]="user.firstname" id="firstname" type="text" pInputText>
             </div>
-            <div class="p-field p-col">
-                <label for="lastname">Prenume</label>
+            <div class="register-body-lastname">
+                <label class="spaces" for="lastname">Prenume</label>
                 <input [(ngModel)]="user.lastname" id="lastname" type="text" pInputText>
             </div>
         </div>
-        <br />
         <!-- email -->
-        <div class="p-fluid p-formgrid p-grid">
-            <div class="p-field p-col">
-                <label for="Email">E-mail </label>
+     
+        <div class="register-inputs">
+            <div class="register-body-email">
+                <label class="spaces" for="Email">E-mail </label>
                 <input [(ngModel)]="user.email" id="email" type="text" pInputText>
             </div>
             <!-- username -->
-            <div class="p-field p-col">
-                <label for="Username">Nume Utilizator</label>
+            <div class="register-body-username">
+                <label class="spaces" for="Username">Nume Utilizator</label>
                 <input [(ngModel)]="user.email" id="username" type="text" pInputText>
             </div>
         </div>
-        <br />
-        <div class="p-fluid p-formgrid p-grid">
-            <div class="p-field p-col">
-        <!-- password -->
-        <div class="first">Parola</div>
-        <input [(ngModel)]="user.password" pPassword type="password" />
-            </div>    
-        <!-- roles -->
-        <div class="p-field p-col">
-        <div class="first">
-            <label>Rol Utilizator</label>
-            <p-dropdown [options]="roles" [(ngModel)]="selectedRole" placeholder="selecteaza" optionLabel="name"
-                [(ngModel)]="user.role" [showClear]="true"></p-dropdown>
-            <br />
+       <div class="register-inputs">
+            <div class="register-body-password">
+                <!-- password -->
+                <div class="first">Parola</div>
+                    <input [(ngModel)]="user.password" pPassword type="password" />
+            </div>
+            <!-- roles -->
+            <div class="register-body-roles">
+                <label class="spaces">Rol Utilizator</label>
+                <p-dropdown [options]="roles" [(ngModel)]="selectedRole" placeholder="selecteaza" optionLabel="name"
+                    [(ngModel)]="user.role" [showClear]="true"></p-dropdown>
             </div>
         </div>
-    </div>
+      
+        <div class="register-body-button">
             <!-- submit button -->
-            <p-button class="submit-button" (click)="save()" label="Adauga"></p-button>
-   
-        
+            <p-button class="button" (click)="save()" label="Adauga"></p-button>
+        </div>
     </div>
 </div>

@@ -11,7 +11,8 @@ input {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.page-container {
+.page-container,
+.register{
   background-color: #faf9f9;
 }
 
@@ -24,7 +25,10 @@ input {
   border-color: #555b6e;
 }
 
-.log-in-button {
+.log-in-button,
+.register,
+.register-body-button .p-button
+ {
   border-color: #89b0ae;
 }
 
@@ -43,7 +47,8 @@ input {
 .log-in-button:focus,
 .log-in-button:hover,
 .log-in-button,
-.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link,
+.register-body-button .p-button{
   background-color: #89b0ae;
 }
 
@@ -53,7 +58,8 @@ input {
 }
 
 .log-in-headline,
-.sales-tab a {
+.sales-tab a,
+.register{
   color: #89b0ae;
 }
 
@@ -79,3 +85,4 @@ input {
 .status-potential{
     color: #000000
 }
+

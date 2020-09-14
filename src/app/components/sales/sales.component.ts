@@ -37,6 +37,7 @@ export class SalesComponent implements OnInit {
   public columns:TableColumn[]=[
     { field: 'name', header: 'Name' },
     { field: 'status', header: 'Status' },
+    {field: 'tasks',header:'Sarcini'},
   ];
 
   public alerts:Note[] = [

@@ -1,79 +1,64 @@
 .register{
-    margin-left:25%;
+    margin:auto;
     width: 50%;
     font-weight: 500;
-    border: 2px solid black;
-    border-color: #248498;
+    border: 2px solid;
     border-radius: 10px;
     border:20%;
     padding: 20px; 
-    background-color:#f7fafc;  
     
 }
 .register-head{
     margin-left:38%;
     font-size: 150%;
     font-weight: bold;
-
 }
+
 .register-body{
     margin-left:20%;
+   
 }
-.submit-button{
-    margin-left:26%;
+.spaces{
+  display:block;
 }
-
-:host >>> input[type="text" i] {
-    padding: 7px 7px;
-    border: 1px solid #ced4da;
-    border-radius: 3px;
+.register-inputs{
+    display:flex;
+    padding-bottom: 20px;
 }
-
-:host >>> input[type="password" i] {
-    padding: 15px 12px;
-    height:34%;
-    border: 1px solid #ced4da;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    border-radius: 3px;
+.register-body-firstname{
+    float: left;
+    display:block;
 }
-:host >>> .p-dropdown{
-    width:111%;
-}
-:host >>> .p-dropdown-label{
-    padding: 7px 7px;
-}
-:host >>> .p-inputtext {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-.first{
-    padding: 0.1rem;
+.register-body-lastname{
+    float:right;
+    padding-left:50px;
     
 }
-.p-field[_ngcontent-cec-c134] {
-    margin-bottom: 0rem;
-    margin-right: 3rem;
-    flex-grow: 1;
+.register-body-email{
+    float: left;
 }
-.p-col {
-    flex-grow: 0;
-    flex-basis: 0;
-    padding: 0.5rem;
+.register-body-username{
+    float:right;
+    padding-left:50px;
 }
-.p-field {
-    margin-bottom: 0rem;
+.register-body-password{
+    float: left;
 }
-
-:host >>> .p-button{
-    color: #ffffff;
-    background: #248498 !important;
-    border: 1px solid #248498;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
-    border-radius: 3px;
+.register-body-roles{
+    float:right;
+    display: block;
+    padding-left:50px;
 }
 
-:host >>> .pi-times:before {
-    /* content: "\e90b"; */
+.register-body-roles .p-dropdown .pi-times:before{
     content:none;
+ }
+
+.register-body-button{
+    margin-left:25%;
 }
+
+.register-body-button .p-button:enabled:hover {
+    background: #bee3db;
+    border-color: #bee3db;
+  }
