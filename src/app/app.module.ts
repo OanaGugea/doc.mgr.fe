@@ -45,6 +45,7 @@ import { OceanDropdownComponent } from './common/ocean-dropdown/ocean-dropdown.c
 import {InputSwitchModule} from 'primeng/inputswitch';
 import { CommonModule } from '@angular/common';
 import {ButtonModule} from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -104,12 +105,12 @@ import {ButtonModule} from 'primeng/button';
     NgbModule,
     TabMenuModule,
     HttpClientModule,
-<<<<<<< HEAD
-=======
     DropdownModule,
     InputSwitchModule,
-    ButtonModule
->>>>>>> 7adc21f... added basic info-view
+    ButtonModule,
+    ButtonModule,
+    InputTextModule
+
   ],
   providers: [AppServices, LoginServices, MessageService],
   bootstrap: [AppComponent],

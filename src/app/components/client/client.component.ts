@@ -21,6 +21,14 @@ export interface ClientDetails{
   styleUrls: ['./client.component.css']
 })
 export class ClientComponent implements OnInit {
+  public projectStageState={
+    projectStage:'Activ',
+    contractNumber:'',
+    signingDate:'',
+    isAdministrated:false,
+  }
+
+  public editModeProjectStage = false;
   public timeScales:SelectItem[]=[
     {label: 'weeks' , value: 'weeks'},
     {label: 'months' , value: 'months'},
@@ -62,5 +70,16 @@ export class ClientComponent implements OnInit {
   public onSelectTimeRange(event){
     console.error('Client',event);
   }
+  public onEditProjectStageStatus(){
+    console.error(this.projectStageState);
+    this.editModeProjectStage = true;
+  }
 
+  public onSaveProjectStageStatus(){
+    this.editModeProjectStage = false;
+  }
+
+  public onCancelNewProjectState(){
+    this.editModeProjectStage = false;
+  }
 }

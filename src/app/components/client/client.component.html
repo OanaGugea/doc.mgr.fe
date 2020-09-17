@@ -34,25 +34,87 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 info-view-container" style="overflow:auto">
-            <div class="row" style="margin: 10px 0px;">
-                <div class="col-md-10"><h5>Stadiu proiect</h5></div>                
-                <div class="col-md-2"><button style="margin-left: 15px;" pButton pRipple type="button" icon="pi pi-pencil" class="p-button-rounded p-button-secondary"></button></div>
+        <div class="col-md-4 info-view-container">
+            <div class="info-header">
+                <div class="row">
+                    <h5 class="col-md-10">Stadiu proiect</h5>
+                    <div class="col-md-2">
+                        <button 
+                            (click)="onEditProjectStageStatus()" 
+                            pButton type="button" 
+                            icon="pi pi-pencil" 
+                            class="p-button-secondary mid-round-btn">
+                        </button>
+                    </div>           
+                </div> 
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <label for="lastname1">Stadiu proiect</label>
+            <div class="info-content">
+                <div class="row sm-row-spacing info-height">
+                    <div class="col-md-6">
+                        <div class="float-free-right">Stadiu proiect</div>
+                    </div>            
+                    <div class="col-md-6 no-padding">
+                        <input
+                            *ngIf="editModeProjectStage;else projectStageVal" 
+                            type="text" 
+                            [(ngModel)]="projectStageState.projectStage" 
+                            class="small-input-field">                               
+                        <ng-template #projectStageVal>
+                            <div class="txt-value-style">{{projectStageState.projectStage}}</div>
+                        </ng-template>                      
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <input id="lastname1" type="text" pInputText> 
+                <div class="row sm-row-spacing info-height">
+                    <div class="col-md-6">
+                        <div class="float-free-right">Numar contract</div>
+                    </div>            
+                    <div class="col-md-6 no-padding">
+                        <input
+                            *ngIf="editModeProjectStage;else contractNumberVal" 
+                            type="text" 
+                            [(ngModel)]="projectStageState.contractNumber" 
+                            class="small-input-field">                               
+                        <ng-template #contractNumberVal>
+                            <div class="txt-value-style">{{projectStageState.contractNumber}}</div>
+                        </ng-template>                      
+                    </div>
+                </div>
+
+                <div class="row sm-row-spacing info-height">
+                    <div class="col-md-6">
+                        <div class="float-free-right">Administrare</div>
+                    </div>            
+                    <div class="col-md-6 no-padding">
+                        <p-inputSwitch  
+                            styleClass='{p-focus:false}'
+                            *ngIf="editModeProjectStage;else isAdministratedVal"
+                            [(ngModel)]="projectStageState.isAdministrated">
+                        </p-inputSwitch>                              
+                        <ng-template #isAdministratedVal>
+                            <div class="txt-value-style">{{projectStageState.isAdministrated}}</div>
+                        </ng-template>                      
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <label for="lastname1">Contact</label>
+            <div class="info-footer">
+                <div *ngIf="editModeProjectStage" class="float-free-right">
+                    <button 
+                        pButton type="button" (click)="onCancelNewProjectState()"                     
+                        icon="pi pi-times" class="mid-round-btn p-button-danger p-button-outlined">
+                    </button>
+                    <button
+                        pButton type="button" (click)="onSaveProjectStageStatus()"
+                        icon="pi pi-check" class="mid-round-btn p-button-success p-button-outlined">
+                    </button>
+                </div>     
+            </div>          
+            
+            <!-- <div class="row">
+                <div class="col-md-6" style="margin-right: 0px;">
+                    <label  style="float: right;">Data semnare acord de lucru</label>
                 </div>
-                <div class="col-md-8">
-                    <input id="lastname1" type="text" pInputText> 
+                <div class="col-md-7">
+                    <input type="text" class="small-input-field" placeholder="Small">      
                 </div>
             </div>
             <div class="row">
@@ -107,7 +169,7 @@
                         (selectedItemChange)="onSelectTimeRange($event)"
                 ></ocean-dropdown>{{selectedTime.label}}
                 </div>
-            </div>
+            </div> -->
 
         </div>
         <div class="col-md-4" style="overflow:auto">
