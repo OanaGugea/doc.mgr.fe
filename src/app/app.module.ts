@@ -37,6 +37,7 @@ import {DropdownModule} from 'primeng/dropdown';
 import {InputSwitchModule} from 'primeng/inputswitch';
 import { CommonModule } from '@angular/common';
 import {ButtonModule} from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,8 @@ import {ButtonModule} from 'primeng/button';
     HttpClientModule,
     DropdownModule,
     InputSwitchModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule
   ],
   providers: [AppServices, LoginServices],
   bootstrap: [AppComponent],
