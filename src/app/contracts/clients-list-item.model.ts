@@ -1,6 +1,7 @@
 export interface IClientsListItem{
     name:string;
     status:string;
+    task:string;
 }
 
 export interface Country {
