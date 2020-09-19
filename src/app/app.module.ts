@@ -37,7 +37,7 @@ import { HttpModule } from '@angular/http';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
-import { OceanTabsComponent } from './common/ocean-tabs/ocean-tabs.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,9 +52,7 @@ import { OceanTabsComponent } from './common/ocean-tabs/ocean-tabs.component';
     OceanTableComponent,
     OceanNoteComponent,
     AddUsersComponent,
-    HomeComponent,
-    OceanTabsComponent
-
+    HomeComponent
   ],
   imports: [
     InputTextModule,
