@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SelectItem } from 'primeng/api';
 import { User } from 'src/app/models/user';
 import { AppServices } from 'src/app/services/common.service';
 
@@ -15,15 +14,10 @@ interface Roles {
 export class AddUsersComponent implements OnInit {
 
   roles: Roles[];
-  selectedRole: Roles;
-  items: SelectItem[];
   public user: User;
 
   constructor(private service: AppServices) {
-    this.items = [];
-    for (let i = 0; i < 10000; i++) {
-      this.items.push({ label: 'Item ' + i, value: 'Item ' + i });
-    }
+
     this.roles = [
       { name: 'Administrator', code: 'NY' },
       { name: 'User-vanzari', code: 'RM' },
@@ -37,6 +31,5 @@ export class AddUsersComponent implements OnInit {
   }
   public save() {
     // to be implemented
-    console.warn(this.user);
   }
 }
