@@ -18,20 +18,25 @@ import { ActivityComponent } from './components/activity/activity.component';
 import { ObservationsComponent } from './components/observations/observations.component'
 import { AddCompanyComponent } from './components/add-company/add-company.component';
 import { AppServices } from './services/common.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { TableModule } from 'primeng/table';
 import { OceanTableComponent } from './common/ocean-table/ocean-table.component';
 import { OceanNoteComponent } from './common/ocean-note/ocean-note.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { AddUsersComponent } from './components/add-users/add-users.component';
+import { DropdownModule } from 'primeng/dropdown';
+import { PasswordModule } from 'primeng/password';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { TabViewModule } from 'primeng/tabview';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-
 
 @NgModule({
   declarations: [
@@ -46,11 +51,15 @@ import { MessageService } from 'primeng/api';
     ActivityComponent,
     OceanTableComponent,
     OceanNoteComponent,
+    AddUsersComponent,
     HomeComponent
   ],
   imports: [
+    InputTextModule,
+    TabViewModule,
     BrowserModule,
     ProgressBarModule,
+    ButtonModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
@@ -62,7 +71,11 @@ import { MessageService } from 'primeng/api';
     MatDialogModule,
     FormsModule,
     ToastModule,
+    ReactiveFormsModule,
+    DropdownModule,
+    PasswordModule,
     RouterModule.forRoot([
+      { path: 'adauga-utilizator', component: AddUsersComponent },
       { path: 'vanzari', component: SalesComponent },
       { path: 'colectari', component: CollectionsComponent },
       { path: 'observatii', component: ObservationsComponent },
