@@ -26,13 +26,13 @@ input {
 }
 
 .log-in-button,
-.register,
-.register-body-button .p-button
+.register
  {
   border-color: #89b0ae;
 }
 
-.log-in-button {
+.log-in-button
+{
   color: #bee3db;
 }
 
@@ -47,8 +47,8 @@ input {
 .log-in-button:focus,
 .log-in-button:hover,
 .log-in-button,
-.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link,
-.register-body-button .p-button{
+.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
   background-color: #89b0ae;
 }
 

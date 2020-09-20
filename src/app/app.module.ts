@@ -73,7 +73,7 @@ import { LoginServices } from './services/login.services';
     DropdownModule,
     PasswordModule,
     RouterModule.forRoot([
-      { path: 'add-user', component: AddUsersComponent },
+      { path: 'adauga-utilizator', component: AddUsersComponent },
       { path: 'vanzari', component: SalesComponent },
       { path: 'colectari', component: CollectionsComponent },
       { path: 'observatii', component: ObservationsComponent },

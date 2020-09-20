@@ -9,7 +9,7 @@
     
 }
 .register-head{
-    margin-left:38%;
+    text-align: center;
     font-size: 150%;
     font-weight: bold;
 }
@@ -53,12 +53,4 @@
 .register-body-roles .p-dropdown .pi-times:before{
     content:none;
  }
-
-.register-body-button{
-    margin-left:25%;
-}
-
-.register-body-button .p-button:enabled:hover {
-    background: #bee3db;
-    border-color: #bee3db;
-  }
+ 
