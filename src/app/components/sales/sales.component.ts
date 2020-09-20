@@ -1,6 +1,5 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
-import { IClientsListItem, Representative, Customer } from 'src/app/contracts/clients-list-item.model';
-import { CustomerService } from './customer.service';
+import { Component, OnInit } from '@angular/core';
+import { IClientsListItem } from 'src/app/contracts/clients-list-item.model';
 import { TableColumn } from 'src/app/common/ocean-table/ocean-table.component';
 import { MenuItem } from 'primeng/api';
 import { alertsData, clientsData, observationsData } from './sales.mockup';
@@ -18,9 +17,9 @@ export interface Note {
 }
 
 @Component({
-  selector: "sales",
-  templateUrl: "./sales.component.html",
-  styleUrls: ["./sales.component.css"],
+  selector: 'app-sales',
+  templateUrl: './sales.component.html',
+  styleUrls: ['./sales.component.css'],
 })
 
 export class SalesComponent implements OnInit {

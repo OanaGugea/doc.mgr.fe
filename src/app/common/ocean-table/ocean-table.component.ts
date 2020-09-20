@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 
-export interface TableColumn{
-  field:string;
-  header:string;
+export interface TableColumn {
+  field: string;
+  header: string;
 }
 
 @Component({
@@ -12,7 +12,7 @@ export interface TableColumn{
   styleUrls: ['./ocean-table.component.css']
 })
 export class OceanTableComponent implements OnInit {
-  @Input() columns:TableColumn[];
+  @Input() columns: TableColumn[];
   @Input() items: any[];
   constructor() { }
 

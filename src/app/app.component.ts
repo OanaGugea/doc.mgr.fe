@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { AppServices } from './services/common.service';
 import { LoginServices } from './services/login.services';
 
 @Component({
@@ -14,9 +13,10 @@ export class AppComponent {
   public subscription: Subscription;
 
   constructor(private service: LoginServices) {
-    this.subscription = this.service.getAuthenticatedState().subscribe( () => {
-      this.isConnected = true;
-    }
-    );
+    this.subscription = this.service.getAuthenticatedState()
+      .subscribe(() => {
+        this.isConnected = true;
+      }
+      );
   }
 }
