@@ -32,10 +32,11 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { TabViewModule } from 'primeng/tabview';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { LoginServices } from './services/login.services';
     MatListModule,
     MatDialogModule,
     FormsModule,
+    ToastModule,
     ReactiveFormsModule,
     DropdownModule,
     PasswordModule,
@@ -86,9 +88,8 @@ import { LoginServices } from './services/login.services';
     NgbModule,
     TabMenuModule,
     HttpClientModule,
-    HttpModule,
   ],
-  providers: [AppServices, LoginServices],
+  providers: [AppServices, LoginServices, MessageService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

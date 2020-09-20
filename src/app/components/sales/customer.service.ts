@@ -10,7 +10,7 @@ export class CustomerService {
     getCustomersLarge() {
         return this.http.get<any>('assets/customers-large.json')
             .toPromise()
-            .then(res => <Customer[]>res.data)
-            .then(data => { return data; });
+            .then(res => res.data as Customer[])
+            .then(data => data);
     }
 }
