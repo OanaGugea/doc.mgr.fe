@@ -11,7 +11,7 @@ input {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.page-container {
+.page-container{
   background-color: #faf9f9;
 }
 
@@ -24,11 +24,15 @@ input {
   border-color: #555b6e;
 }
 
-.log-in-button {
+.ocean-button,
+.input-width.p-inputtext:enabled:focus,
+.input-width.p-inputtext:enabled:hover
+ {
   border-color: #89b0ae;
 }
 
-.log-in-button {
+.ocean-button
+{
   color: #bee3db;
 }
 
@@ -36,32 +40,36 @@ input {
     background-color: #bee3db;
 }
 
-.log-in-button:not(:disabled):not(.disabled).active,
-.log-in-button:not(:disabled):not(.disabled):active,
-.show > .log-in-button.dropdown-toggle,
-.log-in-button.focus,
-.log-in-button:focus,
-.log-in-button:hover,
-.log-in-button,
-.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.ocean-button:not(:disabled):not(.disabled).active,
+.ocean-button:not(:disabled):not(.disabled):active,
+.show > .ocean-button.dropdown-toggle,
+.ocean-button.focus,
+.ocean-button:focus,
+.ocean-button:hover,
+.ocean-button,
+.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
   background-color: #89b0ae;
 }
 
 .log-in-input-field:focus,
-.log-in-button:focus {
+.ocean-button:focus {
   outline-color: #89b0ae;
 }
 
 .log-in-headline,
-.sales-tab a {
+.sales-tab a,
+.register-input,
+.register-head {
   color: #89b0ae;
 }
 
-.log-in-form {
+.log-in-form,
+.register {
   background-color: #ffffff;
 }
 
-.log-in-button,
+.ocean-button,
 .navbar-content,
 .home-icon,
 .search-from-navbar::placeholder,
@@ -78,4 +86,13 @@ input {
 .status-active,
 .status-potential{
     color: #000000
+}
+
+.ocean-button {
+  padding: 5%;
+  box-shadow: none;
+  border: none;
+  margin-top: 10%;
+  width: 50%;
+  border-radius: 0.375rem;
 }
