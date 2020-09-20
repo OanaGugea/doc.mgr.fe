@@ -38,6 +38,8 @@ import {InputSwitchModule} from 'primeng/inputswitch';
 import { CommonModule } from '@angular/common';
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
+import {DialogModule} from 'primeng/dialog';
+import {InputTextareaModule} from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [
@@ -90,7 +92,9 @@ import {InputTextModule} from 'primeng/inputtext';
     DropdownModule,
     InputSwitchModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    DialogModule,
+    InputTextareaModule
   ],
   providers: [AppServices, LoginServices],
   bootstrap: [AppComponent],
