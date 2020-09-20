@@ -26,10 +26,12 @@ import { OceanNoteComponent } from './common/ocean-note/ocean-note.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+
 
 
 @NgModule({
@@ -60,6 +62,7 @@ import { LoginServices } from './services/login.services';
     MatListModule,
     MatDialogModule,
     FormsModule,
+    ToastModule,
     RouterModule.forRoot([
       { path: 'vanzari', component: SalesComponent },
       { path: 'colectari', component: CollectionsComponent },
@@ -73,9 +76,8 @@ import { LoginServices } from './services/login.services';
     NgbModule,
     TabMenuModule,
     HttpClientModule,
-    HttpModule,
   ],
-  providers: [AppServices, LoginServices],
+  providers: [AppServices, LoginServices, MessageService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
