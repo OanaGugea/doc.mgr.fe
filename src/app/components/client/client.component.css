@@ -31,6 +31,7 @@ h5{
 
 .float-free-right{
     float: right;
+    margin-right: 10px;
 }
 
 .no-padding{

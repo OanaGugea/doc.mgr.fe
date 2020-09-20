@@ -26,17 +26,41 @@ export class ClientComponent implements OnInit {
     contractNumber:'',
     signingDate:'',
     isAdministrated:false,
+    isWorkingAgreement:false,
+    signingDateWorkAgreement:'',
+    agreementNumber:'',
+    agreementPeriod:''
+  }
+
+  public clientDetailsStateLabels={
+
+  }
+
+  public clientDetailsState={
+    companyName:'Adobe, Inc',
+    registerCode:'RRMAEWAWEWA213',
+    fiscalCode:'43124313143',
+    telephoneNo:'800-250-23154',
+    fax:'0250 234 210',
+    headquarter:'Mountain View, CA 92810',
+    bankAccount:'SVCPA0000121312',
+    bank:'Bank of America',
+    importantNotes:'Prioritar',
+    website:'www.adobe.com',
   }
 
   public editModeProjectStage = false;
+  public editModeClientDetails = false;
   public timeScales:SelectItem[]=[
     {label: 'weeks' , value: 'weeks'},
     {label: 'months' , value: 'months'},
     {label: 'years' , value: 'years'},
   ];
+
+
   public isAcordDeLucru:boolean = true;
   public isAdministrare:boolean = false;
-  public selectedTime:SelectItem={label: 'Item 1' , value: 'Item 1'};
+  public selectedItem:SelectItem={label: 'weeks' , value: 'weeks'};
   public contactPersons:AccordionContent[]=[
     {header:'John Doe',content:{telefon:"21312",email:'ceva@ceva.com'}},
     {header:'John Doe',content:{telefon:"21312",email:'ceva@ceva.com'}},
@@ -55,20 +79,28 @@ export class ClientComponent implements OnInit {
       {name: 'Washington', code: 'Washington'}
   ];
 
-  cities1: any[] = [];
-  
-  cities2: any[] = [];
-  
-  city1:any = null;
-
-  city2:any = null;
   constructor() { }
 
   ngOnInit(): void {
 
   }
+
+  public onEditClientDetails(){
+    console.warn(this.clientDetailsState);
+    this.editModeClientDetails = true;
+  }
+
+  public onSaveClientDetails(){
+    this.editModeClientDetails = false;
+  }
+
+  public onCancelEditClientDetails(){  
+    this.editModeClientDetails = false;
+  }
+
+
   public onSelectTimeRange(event){
-    console.error('Client',event);
+    console.error('Client Component',event);
   }
   public onEditProjectStageStatus(){
     console.error(this.projectStageState);
