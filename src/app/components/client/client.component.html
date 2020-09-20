@@ -329,12 +329,15 @@
                 <h5 class="col-md-10" style="padding-left: 30px;">Persoane de contact</h5>
                 <div class="col-md-2">
                     <button 
-           
+                        (click)="onAddContact()"
                         pButton type="button" 
                         icon="pi pi-plus" 
                         class="p-button-secondary mid-round-btn">
                     </button>
                 </div>           
+            </div>
+            <div class="info-content" style="overflow: auto;">
+                <ocean-accordion [items]="contactPersons"></ocean-accordion>
             </div>
         </div>
         <div class="info-view-container" style="height:100%;width: 32.5%;">
@@ -342,12 +345,15 @@
                 <h5 class="col-md-10" style="padding-left: 30px;">Discutii cu clientul</h5>
                 <div class="col-md-2">
                     <button 
-           
+                        (click)="onAddDiscution()"
                         pButton type="button" 
                         icon="pi pi-plus" 
                         class="p-button-secondary mid-round-btn">
                     </button>
                 </div>           
+            </div>
+            <div class="info-content" style="overflow: auto;">
+                <ocean-accordion [items]="discutions"></ocean-accordion>
             </div>
         </div>
         <div class="info-view-container" style="height:100%;width: 32.5%;">
@@ -355,25 +361,30 @@
                 <h5 class="col-md-10" style="padding-left: 30px;">Stadiu debitori</h5>
                 <div class="col-md-2">
                     <button 
-           
+                        (click)="onAddDebitorStage()"
                         pButton type="button" 
                         icon="pi pi-plus" 
                         class="p-button-secondary mid-round-btn">
                     </button>
                 </div>           
             </div>
+            <div class="info-content" style="overflow: auto;">
+                <ocean-accordion [items]="debitors"></ocean-accordion>
+            </div>
         </div>
-        <!-- <div class="col-md-4" style="overflow:auto;">
-            <h4>Persone de contact</h4>
-            <ocean-accordion [items]="contactPersons"></ocean-accordion>
-        </div>
-        <div class="col-md-4" style="overflow:auto">
-            <h4>Discutii cu clientul</h4>
-            <ocean-accordion [items]="contactPersons"></ocean-accordion>
-        </div>
-        <div class="col-md-4" style="overflow:auto">
-            <h4>Stadiu debitori</h4>
-            <ocean-accordion [items]="contactPersons"></ocean-accordion>
-        </div> -->
     </div>
 </div>
+<p-dialog header="Adauga discutie" [modal]="true" [(visible)]="discutionDialogVisible" [style]="{width: '30vw'}" [baseZIndex]="10000">
+    <div class="row" style="margin: 10px 0px;">
+        <div class="col-md-3">Nume Client</div>
+        <input type="text" [(ngModel)]="newDiscution.header">                                           
+    </div> 
+    <div class="row" style="margin: 10px 0px;">
+        <div class="col-md-3">Subiect</div>      
+        <textarea pInputTextarea [(ngModel)]="newDiscution.content.subject"></textarea>
+    </div>
+    <ng-template pTemplate="footer">
+        <p-button icon="pi pi-times" (click)="discutionDialogVisible=false" label="Anuleaza" styleClass="p-button-text" ></p-button>
+        <p-button icon="pi pi-check" (click)="onSaveDiscution()" label="Salveaza" ></p-button>
+    </ng-template>
+</p-dialog>

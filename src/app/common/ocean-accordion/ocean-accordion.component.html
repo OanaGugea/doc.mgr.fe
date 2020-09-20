@@ -1,13 +1,16 @@
 <p-accordion>
-    <p-accordionTab *ngFor="let item of items;">
-        <p-header>
+    <p-accordionTab *ngFor="let item of items;" [header]="item.header">
+        <!-- <p-header>
             <span>Some card title</span>
             <p-button title="Delete"></p-button>
-         </p-header>
+         </p-header> -->
+         <!-- <p-header>
+            <span>{{item.header}}</span>
+         </p-header> -->
         <div *ngFor="let item of item.content | keyvalue">
             <div style="display: flex;flex-flow: row;">                
-                <h1 style="font-size: larger">{{item.key}}</h1> 
-                <p style="margin:0 2px;">:{{item.value}}</p>
+                <div >{{item.key}}:</div> 
+                <p style="margin:0 2px;" class="txt-value-style">{{item.value}}</p>
             </div>
         </div>
     </p-accordionTab>
