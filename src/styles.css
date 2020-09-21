@@ -17,6 +17,13 @@ h4{
   text-align: center;
 }
 
+.info-view-container {
+  margin: 10px 5px;
+  box-shadow: 0 0 5px #7e7e7e;
+  border: 1px solid transparent;
+  border-radius: 0.575rem;
+}
+
 .page-container {
   background-color: #faf9f9;
   height: 100%;
