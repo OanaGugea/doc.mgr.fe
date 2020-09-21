@@ -28,8 +28,6 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { AddUsersComponent } from './components/add-users/add-users.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { PasswordModule } from 'primeng/password';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
 import { TabViewModule } from 'primeng/tabview';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
@@ -37,7 +35,6 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-
 import {AccordionModule} from 'primeng/accordion';
 import { ClientComponent } from './components/client/client.component';
 import { OceanAccordionComponent } from './common/ocean-accordion/ocean-accordion.component';
@@ -110,9 +107,6 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
     DropdownModule,
     InputSwitchModule,
     ButtonModule,
-    ButtonModule,
-    InputTextModule,
-
     InputTextModule,
     DialogModule,
     InputTextareaModule
