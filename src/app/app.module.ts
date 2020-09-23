@@ -45,6 +45,7 @@ import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
 import {DialogModule} from 'primeng/dialog';
 import {InputTextareaModule} from 'primeng/inputtextarea';
+import {TooltipModule} from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
     ReactiveFormsModule,
     DropdownModule,
     PasswordModule,
+    TooltipModule,
     RouterModule.forRoot([
       { path: 'adauga-utilizator', component: AddUsersComponent },
       { path: 'vanzari', component: SalesComponent },

@@ -9,7 +9,7 @@ import { LoginServices } from './services/login.services';
 })
 export class AppComponent {
   title = 'Document Manager';
-  public isConnected = false  ;
+  public isConnected = false;
   public subscription: Subscription;
 
   constructor(private service: LoginServices) {

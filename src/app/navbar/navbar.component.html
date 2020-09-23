@@ -1,8 +1,8 @@
 <mat-toolbar class="navbar-content">
   <div class="left-menu-items">
     <a routerLink="/">
-      <mat-icon class="home-icon" aria-hidden="false">home</mat-icon></a
-    >
+      <mat-icon class="home-icon" aria-hidden="false">home</mat-icon>
+    </a>
   </div>
 
   <div class="center-menu-items navbar-link">
@@ -20,5 +20,11 @@
 
   <div class="right-menu-items">
     <input class="search-from-navbar" placeholder="Cauta..." type="text" />
+
+      <div class="logout-button" >
+      <i class=" icon-from-navbar pi pi-fw pi-power-off"   pTooltip="Deconectare" tooltipPosition="bottom" 
+      (click)="refresh()" routerLink="/"></i>
   </div>
+</div>
+
 </mat-toolbar>
