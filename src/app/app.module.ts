@@ -37,6 +37,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import {DialogModule} from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { MessageService } from 'primeng/api';
     ReactiveFormsModule,
     DropdownModule,
     PasswordModule,
+    DialogModule,
     RouterModule.forRoot([
       { path: 'adauga-utilizator', component: AddUsersComponent },
       { path: 'vanzari', component: SalesComponent },
