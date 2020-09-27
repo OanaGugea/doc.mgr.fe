@@ -3,8 +3,9 @@
     flex-flow: column;
 }
 
-h5{
+.header-title{
     color: #89b0ae;
+    padding-left: 1rem;
 }
 
 .small-input-field{
@@ -34,6 +35,7 @@ h5{
 
 .sm-row-spacing{
     padding: 1px 0px;
+    margin: 0;
 }
 
 .float-free-right{

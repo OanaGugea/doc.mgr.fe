@@ -46,6 +46,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {DialogModule} from 'primeng/dialog';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {TooltipModule} from 'primeng/tooltip';
+import { OceanPanelComponent } from './common/ocean-panel/ocean-panel.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import {TooltipModule} from 'primeng/tooltip';
     HomeComponent,
     ClientComponent,
     OceanAccordionComponent,
-    OceanDropdownComponent
+    OceanDropdownComponent,
+    OceanPanelComponent
   ],
   imports: [
     InputTextModule,

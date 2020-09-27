@@ -1,148 +1,139 @@
+<ng-template #clientDetails>
+    <div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Nume Companie</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else companyNameVal" type="text"
+                    [(ngModel)]="clientDetailsState.companyName" class="small-input-field">
+                <ng-template #companyNameVal>
+                    <div class="txt-value-style">{{clientDetailsState.companyName}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Numar inregistrare</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else registerCodeVal" type="text"
+                    [(ngModel)]="clientDetailsState.registerCode" class="small-input-field">
+                <ng-template #registerCodeVal>
+                    <div class="txt-value-style">{{clientDetailsState.registerCode}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Cod fiscal</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else fiscalCodeVal" type="text"
+                    [(ngModel)]="clientDetailsState.fiscalCode" class="small-input-field">
+                <ng-template #fiscalCodeVal>
+                    <div class="txt-value-style">{{clientDetailsState.fiscalCode}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Telefon #</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else telephoneNoVal" type="text"
+                    [(ngModel)]="clientDetailsState.telephoneNo" class="small-input-field">
+                <ng-template #telephoneNoVal>
+                    <div class="txt-value-style">{{clientDetailsState.telephoneNo}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Fax</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else faxVal" type="text" [(ngModel)]="clientDetailsState.fax"
+                    class="small-input-field">
+                <ng-template #faxVal>
+                    <div class="txt-value-style">{{clientDetailsState.fax}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Sediu</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else headquarterVal" type="text"
+                    [(ngModel)]="clientDetailsState.headquarter" class="small-input-field">
+                <ng-template #headquarterVal>
+                    <div class="txt-value-style">{{clientDetailsState.headquarter}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Cont bancar</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else bankAccountVal" type="text"
+                    [(ngModel)]="clientDetailsState.bankAccount" class="small-input-field">
+                <ng-template #bankAccountVal>
+                    <div class="txt-value-style">{{clientDetailsState.bankAccount}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Banca</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else bankVal" type="text" [(ngModel)]="clientDetailsState.bank"
+                    class="small-input-field">
+                <ng-template #bankVal>
+                    <div class="txt-value-style">{{clientDetailsState.bank}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Aspecte Importante</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else importantNotesVal" type="text"
+                    [(ngModel)]="clientDetailsState.importantNotes" class="small-input-field">
+                <ng-template #importantNotesVal>
+                    <div class="txt-value-style">{{clientDetailsState.importantNotes}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row sm-row-spacing">
+            <div class="col-md-6">
+                <div class="float-free-right">Website</div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <input *ngIf="editModeClientDetails;else websiteVal" type="text"
+                    [(ngModel)]="clientDetailsState.website" class="small-input-field">
+                <ng-template #websiteVal>
+                    <div class="txt-value-style">{{clientDetailsState.website}}</div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</ng-template>
 <div class="client-page-container">
     <div class="p-grid no-margin">
         <div class="p-col">
-            <div class="info-view-container">
-                <div class="info-header row">
-                    <h5 class="col-md-10">Detalii client</h5>
-                    <div class="col-md-2">
-                        <button (click)="onEditClientDetails()" pButton type="button" icon="pi pi-pencil"
-                            class="p-button-secondary mid-round-btn">
-                        </button>
-                    </div>
-                </div>
-                <div class="info-content">
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Nume Companie</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else companyNameVal" type="text"
-                                [(ngModel)]="clientDetailsState.companyName" class="small-input-field">
-                            <ng-template #companyNameVal>
-                                <div class="txt-value-style">{{clientDetailsState.companyName}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Numar inregistrare</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else registerCodeVal" type="text"
-                                [(ngModel)]="clientDetailsState.registerCode" class="small-input-field">
-                            <ng-template #registerCodeVal>
-                                <div class="txt-value-style">{{clientDetailsState.registerCode}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Cod fiscal</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else fiscalCodeVal" type="text"
-                                [(ngModel)]="clientDetailsState.fiscalCode" class="small-input-field">
-                            <ng-template #fiscalCodeVal>
-                                <div class="txt-value-style">{{clientDetailsState.fiscalCode}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Telefon #</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else telephoneNoVal" type="text"
-                                [(ngModel)]="clientDetailsState.telephoneNo" class="small-input-field">
-                            <ng-template #telephoneNoVal>
-                                <div class="txt-value-style">{{clientDetailsState.telephoneNo}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Fax</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else faxVal" type="text" [(ngModel)]="clientDetailsState.fax"
-                                class="small-input-field">
-                            <ng-template #faxVal>
-                                <div class="txt-value-style">{{clientDetailsState.fax}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Sediu</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else headquarterVal" type="text"
-                                [(ngModel)]="clientDetailsState.headquarter" class="small-input-field">
-                            <ng-template #headquarterVal>
-                                <div class="txt-value-style">{{clientDetailsState.headquarter}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Cont bancar</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else bankAccountVal" type="text"
-                                [(ngModel)]="clientDetailsState.bankAccount" class="small-input-field">
-                            <ng-template #bankAccountVal>
-                                <div class="txt-value-style">{{clientDetailsState.bankAccount}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Banca</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else bankVal" type="text" [(ngModel)]="clientDetailsState.bank"
-                                class="small-input-field">
-                            <ng-template #bankVal>
-                                <div class="txt-value-style">{{clientDetailsState.bank}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Aspecte Importante</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else importantNotesVal" type="text"
-                                [(ngModel)]="clientDetailsState.importantNotes" class="small-input-field">
-                            <ng-template #importantNotesVal>
-                                <div class="txt-value-style">{{clientDetailsState.importantNotes}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                    <div class="row sm-row-spacing">
-                        <div class="col-md-6">
-                            <div class="float-free-right">Website</div>
-                        </div>
-                        <div class="col-md-6 no-padding">
-                            <input *ngIf="editModeClientDetails;else websiteVal" type="text"
-                                [(ngModel)]="clientDetailsState.website" class="small-input-field">
-                            <ng-template #websiteVal>
-                                <div class="txt-value-style">{{clientDetailsState.website}}</div>
-                            </ng-template>
-                        </div>
-                    </div>
-                </div>
-                <div class="info-footer">
-                    <div *ngIf="editModeClientDetails" class="float-free-right">
-                        <button pButton type="button" (click)="onCancelEditClientDetails()" icon="pi pi-times"
-                            class="mid-round-btn p-button-danger p-button-outlined">
-                        </button>
-                        <button pButton type="button" (click)="onSaveClientDetails()" icon="pi pi-check"
-                            class="mid-round-btn p-button-success p-button-outlined">
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <ocean-panel
+                [title]="'Detalii client'"
+                [enableFooter]="editModeClientDetails"
+                [headerButtonIcon]="'pi pi-pencil'"
+                [contentTemplate]="clientDetails"
+                (onHeaderOutput)="onEditClientDetails()"
+                (onCancelOutput)="onCancelEditClientDetails()"
+                (onConfirmOutput)="onSaveClientDetails()">
+            </ocean-panel>        
         </div>
        
        <!-- stadiu proiect -->
@@ -274,16 +265,18 @@
     <div class="p-grid no-margin">
         <div class="p-col">
             <div class="info-view-container" >
-                <div class="info-header row">
-                    <h5 class="col-md-10">Persoane de contact</h5>
-                    <div class="col-md-2">
+                <div class="p-grid no-margin">    
+                    <div class="p-col-10">
+                        <h5 class="header-title">Persoane de contact</h5>
+                    </div>
+                    <div class="p-col">
                         <button 
-                            (click)="onAddContact()"
-                            pButton type="button" 
-                            icon="pi pi-plus" 
-                            class="p-button-secondary mid-round-btn">
+                        (click)="onAddContact()"
+                        pButton type="button" 
+                        icon="pi pi-plus" 
+                        class="p-button-secondary mid-round-btn">
                         </button>
-                    </div>           
+                    </div>
                 </div>
                 <div class="info-content" style="overflow: auto;">
                     <ocean-accordion [items]="contactPersons"></ocean-accordion>
