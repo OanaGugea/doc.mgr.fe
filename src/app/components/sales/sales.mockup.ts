@@ -6,12 +6,12 @@ export interface Note {
 }
 export const clientsData: IClientsListItem[] = [
     { name: 'Client 1', status: 'active', task: 'Important Meeting #1' },
-    { name: 'Client 2', status: 'active', task: 'Important Meeting #1' },
-    { name: 'Client 3', status: 'active', task: 'Important Meeting #1' },
-    { name: 'Client 4', status: 'active', task: 'Important Meeting #1' },
-    { name: 'Client 5', status: 'potential', task: 'Important Meeting #1' },
-    { name: 'Client 6', status: 'active', task: 'Important Meeting #1' },
-    { name: 'Client 14', status: 'potential', task: 'Important Meeting #1' },
+    { name: 'Client 2', status: 'active', task: 'Important Meeting #2' },
+    { name: 'Client 3', status: 'active', task: 'Important Meeting #3' },
+    { name: 'Client 4', status: 'active', task: 'Important Meeting #4' },
+    { name: 'Client 5', status: 'potential', task: 'Important Meeting #5' },
+    { name: 'Client 6', status: 'active', task: 'Important Meeting #6' },
+    { name: 'Client 14', status: 'potential', task: 'Important Meeting #7' },
 
 ];
 

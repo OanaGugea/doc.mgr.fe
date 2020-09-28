@@ -38,6 +38,7 @@ import { LoginServices } from './services/login.services';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import {DialogModule} from 'primeng/dialog';
+import { OceanDialogComponent } from './common/ocean-dialog/ocean-dialog.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import {DialogModule} from 'primeng/dialog';
     OceanTableComponent,
     OceanNoteComponent,
     AddUsersComponent,
-    HomeComponent
+    HomeComponent,
+    OceanDialogComponent
   ],
   imports: [
     InputTextModule,

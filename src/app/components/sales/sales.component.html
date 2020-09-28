@@ -1,14 +1,18 @@
-<div >
-    <input class="search-from-sales" placeholder="Cauta..." type="text" />
+<div class="page-container">
+<div class="p-grid">
+  <div class="p-col-6"></div>
+  <div class="p-col">
+    <input class=" p-shadow-4 search-from-sales" placeholder="Cauta..." type="text" />
   </div>
+</div>
 <div class="row row-styles">
   <div class="col-md-6">
-    <ocean-table
-      [columns]="columns"
-      [items]="clients"
-    ></ocean-table>
+    <ocean-table 
+    [columns]="columns" 
+    [items]="clients">
+  </ocean-table>
   </div>
-  <div class="col-md-6">
+  <div class="right-table col-md-6">
     <!-- <p-tabMenu [model]="items">
       <ng-template pTemplate="item" let-item let-i="index">
           {{item.label}}
@@ -17,31 +21,27 @@
     <ngb-tabset [justify]="'fill'" class="sales-tab custom-tab-content flex-column flex-md-row" type="pills">
       <ngb-tab>
         <ng-template ngbTabTitle>
-           Alerte
+          Alerte
         </ng-template>
-          <ng-template ngbTabContent>
-            <div *ngFor="let alert of alerts;let i = index">
-              <ocean-note        
-                [title]="alert.title"
-                [textContent]="alert.textContent">
-              </ocean-note>
-            </div>
-          </ng-template>
+        <ng-template ngbTabContent>
+          <div *ngFor="let alert of alerts;let i = index">
+            <ocean-note [title]="alert.title" [textContent]="alert.textContent">
+            </ocean-note>
+          </div>
+        </ng-template>
       </ngb-tab>
       <ngb-tab>
         <ng-template ngbTabTitle>
-           Observatii
+          Observatii
         </ng-template>
-          <ng-template ngbTabContent>
-            <div *ngFor="let observation of observations;let i = index">
-              <ocean-note
-                [backgroundColor]="'#cfc'"        
-                [title]="observation.title"
-                [textContent]="observation.textContent">
-              </ocean-note>
-            </div>
-          </ng-template>
+        <ng-template ngbTabContent>
+          <div *ngFor="let observation of observations;let i = index">
+            <ocean-note [backgroundColor]="'#cfc'" [title]="observation.title" [textContent]="observation.textContent">
+            </ocean-note>
+          </div>
+        </ng-template>
       </ngb-tab>
     </ngb-tabset>
   </div>
+</div>
 </div>
