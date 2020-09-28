@@ -15,7 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MessagesComponent } from './components/messages/messages.component';
 import { CollectionsComponent } from './components/collections/collections.component';
 import { ActivityComponent } from './components/activity/activity.component';
-import { ObservationsComponent } from './components/observations/observations.component'
+import { ObservationsComponent } from './components/observations/observations.component';
 import { AddCompanyComponent } from './components/add-company/add-company.component';
 import { AppServices } from './services/common.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
