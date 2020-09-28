@@ -3,6 +3,7 @@
   position: sticky;
   top: 0px;
   width: 100%;
+  padding: 0 4%;
 }
 
 .left-menu-items {
@@ -42,13 +43,6 @@
   outline: 0;
   box-shadow: none, none;
 }
-.logout-button{
- padding-left:20px;
-}
-.icon-from-navbar:hover {
-  font-size:1.2rem;
-  vertical-align: middle;
-}
 
 .search-from-navbar::placeholder {
   opacity: 1;
@@ -56,4 +50,8 @@
 
 .navbar-link a:hover {
   text-decoration: none;
+}
+
+.logout-button {
+  padding-left: 1%;
 }

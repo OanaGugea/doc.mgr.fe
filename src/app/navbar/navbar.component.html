@@ -12,16 +12,24 @@
     <a mat-button routerLink="/adauga-companie">Adauga companie</a>
     <a mat-button routerLink="/activitate">Activitate</a>
     <a mat-button routerLink="/mesaje">Mesaje</a>
-    <a mat-button href="http://portal.just.ro/SitePages/acasa.aspx" target="_blank">Portal Judecatorie</a>
+    <a
+      mat-button
+      href="http://portal.just.ro/SitePages/acasa.aspx"
+      target="_blank"
+      >Portal Judecatorie</a
+    >
   </div>
 
   <div class="right-menu-items">
     <input class="search-from-navbar" placeholder="Cauta..." type="text" />
 
-      <div class="logout-button" >
-      <i class=" icon-from-navbar pi pi-fw pi-power-off"   pTooltip="Deconectare" tooltipPosition="bottom" 
-      (click)="refresh()" routerLink="/"></i>
+    <div class="logout-button">
+      <i
+        class="pi pi-power-off"
+        pTooltip="Deconectare"
+        tooltipPosition="bottom"
+        (click)="logoutAndRefreshPage()"
+      ></i>
+    </div>
   </div>
-</div>
-
 </mat-toolbar>
