@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  public refresh(): void {
+  public logoutAndRefreshPage(): void {
     window.location.href = '/';
     this.service.sendLogoutMessage();
   }

@@ -8,7 +8,6 @@ export class LoginServices {
   private subject = new Subject<any>();
   private logoutSubject = new Subject<any>();
   private serverUrl = 'http://localhost:8000/users/';
-  public path: any = "/";
 
   constructor(private http: HttpClient, private messageService: MessageService) { }
 
