@@ -4,6 +4,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export interface TableColumn {
   field: string;
   header: string;
+  isSortable: boolean;
 }
 
 @Component({

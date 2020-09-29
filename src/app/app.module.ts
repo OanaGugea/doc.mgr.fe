@@ -15,7 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MessagesComponent } from './components/messages/messages.component';
 import { CollectionsComponent } from './components/collections/collections.component';
 import { ActivityComponent } from './components/activity/activity.component';
-import { ObservationsComponent } from './components/observations/observations.component'
+import { ObservationsComponent } from './components/observations/observations.component';
 import { AddCompanyComponent } from './components/add-company/add-company.component';
 import { AppServices } from './services/common.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -37,7 +37,9 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-import {TooltipModule} from 'primeng/tooltip';
+import { DialogModule } from 'primeng/dialog';
+import { OceanDialogComponent } from './common/ocean-dialog/ocean-dialog.component';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,8 @@ import {TooltipModule} from 'primeng/tooltip';
     OceanTableComponent,
     OceanNoteComponent,
     AddUsersComponent,
-    HomeComponent
+    HomeComponent,
+    OceanDialogComponent
   ],
   imports: [
     InputTextModule,
@@ -75,6 +78,7 @@ import {TooltipModule} from 'primeng/tooltip';
     ReactiveFormsModule,
     DropdownModule,
     PasswordModule,
+    DialogModule,
     TooltipModule,
     RouterModule.forRoot([
       { path: 'adauga-utilizator', component: AddUsersComponent },
