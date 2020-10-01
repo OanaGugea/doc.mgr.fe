@@ -8,7 +8,8 @@ body {
 body,
 button,
 input,
-.settings-button .p-component {
+.settings-button .p-component,
+.navbar-link .p-component{
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
@@ -18,13 +19,17 @@ input,
 
 .navbar-content,
 .search-from-navbar,
-.settings-button .p-megamenu
+.settings-button .p-megamenu,
+.navbar-link .p-button
 {
   background-color: #555b6e;
 }
 
 .search-from-navbar:focus,
-.settings-button .p-megamenu {
+.settings-button .p-megamenu,
+.navbar-link .p-button,
+.navbar-link .p-button:enabled:active
+{
   border-color: #555b6e;
 }
 
@@ -111,6 +116,17 @@ input,
 
 .settings-button .p-megamenu .p-megamenu-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link,
 .settings-button .p-megamenu .p-megamenu-root-list > 
-.p-menuitem > .p-menuitem-link:not(.p-disabled):hover{
+.p-menuitem > .p-menuitem-link:not(.p-disabled):hover,
+.navbar-link .p-button,
+.navbar-link .p-button:enabled:hover,
+.navbar-link .p-button:enabled:active
+{
   background: #555b6e;
+}
+.navbar-link .p-button{
+  border:#555b6e;
+}
+.navbar-link .p-button:focus
+{
+  box-shadow:0 0 0 0.2rem #555b6e;
 }
