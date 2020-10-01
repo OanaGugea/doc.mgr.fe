@@ -29,9 +29,9 @@ export class SalesComponent implements OnInit {
   public observations = observationsData;
 
   public columns: TableColumn[] = [
-    { field: 'name', header: 'Name' },
-    { field: 'status', header: 'Status' },
-    { field: 'tasks', header: 'Sarcini' },
+    { field: 'name', header: 'Name', isSortable: true },
+    { field: 'status', header: 'Status', isSortable: true },
+    { field: 'tasks', header: 'Sarcini', isSortable: false }
   ];
 
   items: MenuItem[];

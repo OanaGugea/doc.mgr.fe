@@ -1,17 +1,21 @@
+<div class="ocean-table-style">
 <p-table [columns]="columns" [value]="items">
     <ng-template pTemplate="header" let-columns>
         <tr>
-            <th *ngFor="let col of columns">
-                {{col.header}}
+            <th *ngFor="let col of columns" pSortableColumn="col.field">
+                {{col.header}} <p-sortIcon  *ngIf="col.isSortable" field="col.field">
+                </p-sortIcon>
             </th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-item let-columns="columns">
+
         <!-- <tr>
             <td *ngFor="let col of columns">
                 {{item[col.field]}}
             </td>
         </tr> -->
+
         <tr class="ui-selectable-row">
             <td>
                 <!-- <span class="ui-column-title">Name</span> -->
@@ -28,3 +32,4 @@
 
     </ng-template>
 </p-table>
+</div>

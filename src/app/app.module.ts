@@ -15,7 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MessagesComponent } from './components/messages/messages.component';
 import { CollectionsComponent } from './components/collections/collections.component';
 import { ActivityComponent } from './components/activity/activity.component';
-import { ObservationsComponent } from './components/observations/observations.component'
+import { ObservationsComponent } from './components/observations/observations.component';
 import { AddCompanyComponent } from './components/add-company/add-company.component';
 import { AppServices } from './services/common.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -39,6 +39,8 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import {TooltipModule} from 'primeng/tooltip';
 import {MegaMenuModule} from 'primeng/megamenu';
+import { DialogModule } from 'primeng/dialog';
+import { OceanDialogComponent } from './common/ocean-dialog/ocean-dialog.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,8 @@ import {MegaMenuModule} from 'primeng/megamenu';
     OceanTableComponent,
     OceanNoteComponent,
     AddUsersComponent,
-    HomeComponent
+    HomeComponent,
+    OceanDialogComponent
   ],
   imports: [
     InputTextModule,
@@ -76,6 +79,7 @@ import {MegaMenuModule} from 'primeng/megamenu';
     ReactiveFormsModule,
     DropdownModule,
     PasswordModule,
+    DialogModule,
     TooltipModule,
     MegaMenuModule,
     RouterModule.forRoot([

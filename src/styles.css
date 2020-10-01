@@ -30,7 +30,8 @@ input,
 
 .ocean-button,
 .input-width.p-inputtext:enabled:focus,
-.input-width.p-inputtext:enabled:hover
+.input-width.p-inputtext:enabled:hover,
+.search-from-sales
  {
   border-color: #89b0ae;
 }
@@ -57,14 +58,19 @@ input,
 }
 
 .log-in-input-field:focus,
-.ocean-button:focus {
+.ocean-button:focus,
+.search-from-sales:focus,
+.ocean-table-style .p-datatable .p-sortable-column{
   outline-color: #89b0ae;
 }
 
 .log-in-headline,
 .sales-tab a,
 .register-input,
-.register-head {
+.register-head,
+.search-from-sales,
+.ocean-table-style .p-datatable .p-sortable-column.p-highlight,
+.ocean-table-style .p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon{
   color: #89b0ae;
 }
 
