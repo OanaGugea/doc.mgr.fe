@@ -18,8 +18,6 @@ export class LoginComponent implements OnInit {
   }
 
   public conecting(): void {
-    console.log('Email:' + this.login.email);
-    console.log('Password:' + this.login.password);
     this.service.sendAuthenticationMessage(this.login.email, this.login.password);
   }
 }

@@ -17,6 +17,7 @@
     "@angular/compiler": "~9.0.6",
     "@angular/core": "~9.0.6",
     "@angular/forms": "~9.0.6",
+    "@angular/http": "^7.2.16",
     "@angular/localize": "~9.0.6",
     "@angular/material": "^9.2.4",
     "@angular/platform-browser": "~9.0.6",
@@ -24,12 +25,12 @@
     "@angular/router": "~9.0.6",
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
     "bootstrap": "^4.5.0",
+    "primeflex": "^2.0.0",
     "primeicons": "^4.0.0",
-    "primeng": "^10.0.0-rc.4",
+    "primeng": "^10.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2",
-    "@angular/http": "^7.2.16"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1001.0",

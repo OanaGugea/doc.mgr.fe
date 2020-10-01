@@ -3,6 +3,7 @@
   position: sticky;
   top: 0px;
   width: 100%;
+  padding: 0 4%;
 }
 
 .left-menu-items {
@@ -49,4 +50,8 @@
 
 .navbar-link a:hover {
   text-decoration: none;
+}
+
+.logout-button {
+  padding-left: 1%;
 }

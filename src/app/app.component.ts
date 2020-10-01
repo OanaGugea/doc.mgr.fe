@@ -18,5 +18,10 @@ export class AppComponent {
         this.isConnected = true;
       }
       );
+    this.subscription = this.service.getLogoutState()
+      .subscribe(() => {
+        this.isConnected = false;
+      }
+      );
   }
 }
