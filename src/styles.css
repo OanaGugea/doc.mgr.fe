@@ -11,8 +11,13 @@ input {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+
+h4{
+  color: #89b0ae;
+  text-align: center;
+}
+
 .info-view-container {
-  margin: 10px 5px;
   box-shadow: 0 0 5px #7e7e7e;
   border: 1px solid transparent;
   border-radius: 0.575rem;

@@ -29,8 +29,13 @@
               "node_modules/primeng/resources/themes/saga-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeicons/primeicons.css",
+<<<<<<< HEAD
               "src/styles.css",
               "node_modules/primeflex/primeflex.css"
+=======
+              "node_modules/primeflex/primeflex.css",
+              "src/styles.css"
+>>>>>>> 1788afb3fd6a26a0ad5561d90558fa4226009eea
             ],
             "scripts": []
           },

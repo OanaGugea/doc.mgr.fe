@@ -28,25 +28,25 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { AddUsersComponent } from './components/add-users/add-users.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { PasswordModule } from 'primeng/password';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
 import { TabViewModule } from 'primeng/tabview';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 import { AccordionModule } from 'primeng/accordion';
 import { ClientComponent } from './components/client/client.component';
 import { OceanAccordionComponent } from './common/ocean-accordion/ocean-accordion.component';
 import { OceanDropdownComponent } from './common/ocean-dropdown/ocean-dropdown.component';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { CommonModule } from '@angular/common';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
 import { DialogModule } from 'primeng/dialog';
 import { InputTextareaModule } from 'primeng/inputtextarea';
-import { ToastModule } from 'primeng/toast';
-import { MessageService } from 'primeng/api';
-import { OceanDialogComponent } from './common/ocean-dialog/ocean-dialog.component';
 import { TooltipModule } from 'primeng/tooltip';
+import { OceanPanelComponent } from './common/ocean-panel/ocean-panel.component';
 
 @NgModule({
   declarations: [
@@ -61,13 +61,13 @@ import { TooltipModule } from 'primeng/tooltip';
     ActivityComponent,
     OceanTableComponent,
     OceanNoteComponent,
+    AddUsersComponent,
+    HomeComponent,
     HomeComponent,
     ClientComponent,
     OceanAccordionComponent,
     OceanDropdownComponent,
-    AddUsersComponent,
-    HomeComponent,
-    OceanDialogComponent
+    OceanPanelComponent
   ],
   imports: [
     InputTextModule,
