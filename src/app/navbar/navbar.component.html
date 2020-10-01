@@ -1,8 +1,10 @@
 <mat-toolbar class="navbar-content">
   <div class="left-menu-items">
     <a routerLink="/">
-      <mat-icon class="home-icon" aria-hidden="false">home</mat-icon>
+      <mat-icon pTooltip="Acasa" tooltipPosition="bottom" class="home-icon" aria-hidden="false">home</mat-icon>
+      
     </a>
+    Acasa
   </div>
 
   <div class="center-menu-items navbar-link">
@@ -12,24 +14,21 @@
     <a mat-button routerLink="/adauga-companie">Adauga companie</a>
     <a mat-button routerLink="/activitate">Activitate</a>
     <a mat-button routerLink="/mesaje">Mesaje</a>
-    <a
-      mat-button
-      href="http://portal.just.ro/SitePages/acasa.aspx"
-      target="_blank"
-      >Portal Judecatorie</a
-    >
+    <a mat-button href="http://portal.just.ro/SitePages/acasa.aspx" target="_blank">Portal Judecatorie</a>
   </div>
 
   <div class="right-menu-items">
     <input class="search-from-navbar" placeholder="Cauta..." type="text" />
+    <div class="settings-button">
+      <p-megaMenu [model]="items">
+      </p-megaMenu>
+    </div>
 
     <div class="logout-button">
-      <i
-        class="pi pi-power-off"
-        pTooltip="Deconectare"
-        tooltipPosition="bottom"
-        (click)="logoutAndRefreshPage()"
-      ></i>
+      <i class="pi pi-power-off" pTooltip="Deconectare" tooltipPosition="bottom" (click)="logoutAndRefreshPage()"></i>
+      Deconectare
     </div>
+
   </div>
 </mat-toolbar>
+<!--  -->

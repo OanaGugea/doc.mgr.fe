@@ -7,7 +7,8 @@ body {
 }
 body,
 button,
-input {
+input,
+.settings-button .p-component {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
@@ -16,11 +17,14 @@ input {
 }
 
 .navbar-content,
-.search-from-navbar {
+.search-from-navbar,
+.settings-button .p-megamenu
+{
   background-color: #555b6e;
 }
 
-.search-from-navbar:focus {
+.search-from-navbar:focus,
+.settings-button .p-megamenu {
   border-color: #555b6e;
 }
 
@@ -75,7 +79,9 @@ input {
 .search-from-navbar::placeholder,
 .search-from-navbar,
 .navbar-link a:hover,
-.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link,
+.settings-button .p-megamenu .p-megamenu-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-icon,
+.p-megamenu .p-megamenu-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text{
   color: #ffffff;
 }
 
@@ -95,4 +101,10 @@ input {
   margin-top: 10%;
   width: 50%;
   border-radius: 0.375rem;
+}
+
+.settings-button .p-megamenu .p-megamenu-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link,
+.settings-button .p-megamenu .p-megamenu-root-list > 
+.p-menuitem > .p-menuitem-link:not(.p-disabled):hover{
+  background: #555b6e;
 }
