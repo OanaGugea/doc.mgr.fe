@@ -13,8 +13,21 @@ input,
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.page-container{
+
+h4{
+  color: #89b0ae;
+  text-align: center;
+}
+
+.info-view-container {
+  box-shadow: 0 0 5px #7e7e7e;
+  border: 1px solid transparent;
+  border-radius: 0.575rem;
+}
+
+.page-container {
   background-color: #faf9f9;
+  height: 100%;
 }
 
 .navbar-content,
@@ -36,18 +49,16 @@ input,
 .ocean-button,
 .input-width.p-inputtext:enabled:focus,
 .input-width.p-inputtext:enabled:hover,
-.search-from-sales
- {
+.search-from-sales {
   border-color: #89b0ae;
 }
 
-.ocean-button
-{
+.ocean-button {
   color: #bee3db;
 }
 
-.status-potential{
-    background-color: #bee3db;
+.status-potential {
+  background-color: #bee3db;
 }
 
 .ocean-button:not(:disabled):not(.disabled).active,
@@ -57,15 +68,15 @@ input,
 .ocean-button:focus,
 .ocean-button:hover,
 .ocean-button,
-.sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link
-{
+.sales-tab .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   background-color: #89b0ae;
 }
 
 .log-in-input-field:focus,
 .ocean-button:focus,
 .search-from-sales:focus,
-.ocean-table-style .p-datatable .p-sortable-column{
+.ocean-table-style .p-datatable .p-sortable-column {
   outline-color: #89b0ae;
 }
 
@@ -75,7 +86,10 @@ input,
 .register-head,
 .search-from-sales,
 .ocean-table-style .p-datatable .p-sortable-column.p-highlight,
-.ocean-table-style .p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon{
+.ocean-table-style
+  .p-datatable
+  .p-sortable-column.p-highlight
+  .p-sortable-column-icon {
   color: #89b0ae;
 }
 
@@ -90,19 +104,21 @@ input,
 .search-from-navbar::placeholder,
 .search-from-navbar,
 .navbar-link a:hover,
+.sales-tab .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
 .sales-tab .nav-pills .nav-link.active, .nav-pills .show>.nav-link,
 .settings-button .p-megamenu .p-megamenu-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-icon,
 .p-megamenu .p-megamenu-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text{
   color: #ffffff;
 }
 
-.status-active{
-    background-color: #ffd6ba;
+.status-active {
+  background-color: #ffd6ba;
 }
 
 .status-active,
-.status-potential{
-    color: #000000
+.status-potential {
+  color: #000000;
 }
 
 .ocean-button {

@@ -49,6 +49,7 @@
 }
 
 .log-in-form,
-.log-in-input-field {
-  border-radius: 0.375rem;
+.log-in-input-field,
+.log-in-button {
+  border-radius: 0.575rem;
 }

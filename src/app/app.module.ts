@@ -28,8 +28,6 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { AddUsersComponent } from './components/add-users/add-users.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { PasswordModule } from 'primeng/password';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
 import { TabViewModule } from 'primeng/tabview';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
@@ -37,8 +35,18 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-import {TooltipModule} from 'primeng/tooltip';
-import {MegaMenuModule} from 'primeng/megamenu';
+import { AccordionModule } from 'primeng/accordion';
+import { ClientComponent } from './components/client/client.component';
+import { OceanAccordionComponent } from './common/ocean-accordion/ocean-accordion.component';
+import { OceanDropdownComponent } from './common/ocean-dropdown/ocean-dropdown.component';
+import { InputSwitchModule } from 'primeng/inputswitch';
+import { CommonModule } from '@angular/common';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { OceanPanelComponent } from './common/ocean-panel/ocean-panel.component';
+import { TooltipModule } from 'primeng/tooltip';
+import { MegaMenuModule } from 'primeng/megamenu';
 import { DialogModule } from 'primeng/dialog';
 import { OceanDialogComponent } from './common/ocean-dialog/ocean-dialog.component';
 
@@ -57,12 +65,18 @@ import { OceanDialogComponent } from './common/ocean-dialog/ocean-dialog.compone
     OceanNoteComponent,
     AddUsersComponent,
     HomeComponent,
-    OceanDialogComponent
+    HomeComponent,
+    ClientComponent,
+    OceanAccordionComponent,
+    OceanDropdownComponent,
+    OceanPanelComponent
   ],
   imports: [
     InputTextModule,
     TabViewModule,
     BrowserModule,
+    CommonModule,
+    FormsModule,
     ProgressBarModule,
     ButtonModule,
     BrowserAnimationsModule,
@@ -90,12 +104,20 @@ import { OceanDialogComponent } from './common/ocean-dialog/ocean-dialog.compone
       { path: 'mesaje', component: MessagesComponent },
       { path: 'adauga-companie', component: AddCompanyComponent },
       { path: 'activitate', component: ActivityComponent },
+      { path: 'client', component: ClientComponent },
       { path: '**', component: HomeComponent },
     ]),
     TableModule,
+    AccordionModule,
     NgbModule,
     TabMenuModule,
     HttpClientModule,
+    DropdownModule,
+    InputSwitchModule,
+    ButtonModule,
+    InputTextModule,
+    DialogModule,
+    InputTextareaModule
   ],
   providers: [AppServices, LoginServices, MessageService],
   bootstrap: [AppComponent],
