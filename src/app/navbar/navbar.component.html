@@ -1,31 +1,31 @@
 <mat-toolbar class="navbar-content">
   <div class="left-menu-items">
-    <a routerLink="/">
-      <mat-icon class="home-icon" aria-hidden="false">home</mat-icon>
-    </a>
+    <div class="navbar-link">
+      <p-button routerLink="/" label="Acasa" icon="pi pi-home"></p-button>
+    </div>
   </div>
 
   <div class="center-menu-items navbar-link">
-    <a mat-button routerLink="/vanzari">Vanzari </a>
-    <a mat-button routerLink="/client">Client</a>
-    <a mat-button routerLink="/colectari">Colectari</a>
-    <a mat-button routerLink="/observatii">Observatii</a>
-    <a mat-button routerLink="/adauga-companie">Adauga companie</a>
-    <a mat-button routerLink="/activitate">Activitate</a>
-    <a mat-button routerLink="/mesaje">Mesaje</a>
-    <a mat-button href="http://portal.just.ro/SitePages/acasa.aspx" target="_blank"
-      >Portal Judecatorie</a
-    >
+    <p-button routerLink="/vanzari">Vanzari</p-button>
+    <p-button routerLink="/client">Client</p-button>
+    <p-button routerLink="/colectari">Colectari</p-button>
+    <p-button routerLink="/observatii">Observatii</p-button>
+    <p-button routerLink="/adauga-companie">Adauga companie</p-button>
+    <p-button routerLink="/activitate">Activitate</p-button>
+    <p-button routerLink="/mesaje">Mesaje</p-button>
+    <p-button value="Open" href="http://portal.just.ro/SitePages/acasa.aspx" target="_blank">Portal Judecatorie
+    </p-button>
   </div>
 
   <div class="right-menu-items">
-    <div class="logout-button">
-      <i
-        class="pi pi-power-off"
-        pTooltip="Deconectare"
-        tooltipPosition="bottom"
-        (click)="logoutAndRefreshPage()"
-      ></i>
+    <div class="settings-button">
+      <p-megaMenu [model]="items">
+      </p-megaMenu>
     </div>
+
+    <div class="navbar-link">
+      <p-button label="Deconectare" icon="pi pi-power-off" (click)="logoutAndRefreshPage()"></p-button>
+    </div>
+
   </div>
 </mat-toolbar>

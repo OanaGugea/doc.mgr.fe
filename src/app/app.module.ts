@@ -43,10 +43,12 @@ import { InputSwitchModule } from 'primeng/inputswitch';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
-import { DialogModule } from 'primeng/dialog';
 import { InputTextareaModule } from 'primeng/inputtextarea';
-import { TooltipModule } from 'primeng/tooltip';
 import { OceanPanelComponent } from './common/ocean-panel/ocean-panel.component';
+import { TooltipModule } from 'primeng/tooltip';
+import { MegaMenuModule } from 'primeng/megamenu';
+import { DialogModule } from 'primeng/dialog';
+import { OceanDialogComponent } from './common/ocean-dialog/ocean-dialog.component';
 
 @NgModule({
   declarations: [
@@ -93,6 +95,7 @@ import { OceanPanelComponent } from './common/ocean-panel/ocean-panel.component'
     PasswordModule,
     DialogModule,
     TooltipModule,
+    MegaMenuModule,
     RouterModule.forRoot([
       { path: 'adauga-utilizator', component: AddUsersComponent },
       { path: 'vanzari', component: SalesComponent },

@@ -8,6 +8,7 @@
 
 .left-menu-items {
   justify-content: left;
+  font-size:16px;
 }
 
 .center-menu-items {
@@ -20,7 +21,7 @@
 }
 
 .home-icon {
-  vertical-align: middle;
+  vertical-align: text-bottom;
 }
 
 .search-from-navbar {
@@ -48,10 +49,38 @@
   opacity: 1;
 }
 
+:host >>> .navbar-link .p-button .p-button-icon-left{
+  margin-bottom: 0.2rem;
+}
+
 .navbar-link a:hover {
   text-decoration: none;
 }
 
 .logout-button {
-  padding-left: 1%;
+  padding-left: 2%;
+  font-size: 16px;
+}
+
+:host>>> .settings-button .p-megamenu{
+  padding: 0;
+  margin-left: 1rem;
+}
+
+:host >>> .settings-button .pi-angle-down:before {
+  content: none;
+}
+
+:host >>> .settings-button .p-megamenu-root-list>.p-menuitem-active>.p-megamenu-panel{
+  position: absolute;
+  top: 3.3rem;
+  right: -4.5rem;
+}
+
+:host >>>.settings-button .p-megamenu .p-megamenu-submenu-header{
+  padding: 0;
+}
+
+:host >>>.settings-button .p-megamenu .p-menuitem-link:focus {
+  box-shadow:none;
 }
