@@ -37,9 +37,10 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginServices } from './services/login.services';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import {TooltipModule} from 'primeng/tooltip';
+import {MegaMenuModule} from 'primeng/megamenu';
 import { DialogModule } from 'primeng/dialog';
 import { OceanDialogComponent } from './common/ocean-dialog/ocean-dialog.component';
-import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { TooltipModule } from 'primeng/tooltip';
     PasswordModule,
     DialogModule,
     TooltipModule,
+    MegaMenuModule,
     RouterModule.forRoot([
       { path: 'adauga-utilizator', component: AddUsersComponent },
       { path: 'vanzari', component: SalesComponent },
